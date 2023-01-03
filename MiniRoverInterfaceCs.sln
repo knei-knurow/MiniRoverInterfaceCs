@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniRoverInterfaceCs", "MiniRoverInterfaceCs\MiniRoverInterfaceCs.csproj", "{4B0B8C69-6C65-4FA1-8DE5-9992A6EEF397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B0B8C69-6C65-4FA1-8DE5-9992A6EEF397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0B8C69-6C65-4FA1-8DE5-9992A6EEF397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0B8C69-6C65-4FA1-8DE5-9992A6EEF397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0B8C69-6C65-4FA1-8DE5-9992A6EEF397}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26A55ABF-97FA-450E-BB18-01FF96E50E55}
+	EndGlobalSection
+EndGlobal
