@@ -39,14 +39,18 @@
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnConnect = new System.Windows.Forms.Button();
             this.BtnDisconnect = new System.Windows.Forms.Button();
+            this.Wheel0SpeedSlider = new System.Windows.Forms.TrackBar();
             this.Wheel1SpeedSlider = new System.Windows.Forms.TrackBar();
             this.Wheel2SpeedSlider = new System.Windows.Forms.TrackBar();
             this.Wheel3SpeedSlider = new System.Windows.Forms.TrackBar();
-            this.Wheel4SpeedSlider = new System.Windows.Forms.TrackBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel3SpeedSlider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Wheel4SpeedSlider)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtRecievePort
@@ -125,60 +129,100 @@
             this.BtnDisconnect.UseVisualStyleBackColor = true;
             this.BtnDisconnect.Click += new System.EventHandler(this.BtnDisconnect_Click);
             // 
+            // Wheel0SpeedSlider
+            // 
+            this.Wheel0SpeedSlider.Location = new System.Drawing.Point(10, 60);
+            this.Wheel0SpeedSlider.Maximum = 255;
+            this.Wheel0SpeedSlider.Minimum = -255;
+            this.Wheel0SpeedSlider.Name = "Wheel0SpeedSlider";
+            this.Wheel0SpeedSlider.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.Wheel0SpeedSlider.Size = new System.Drawing.Size(45, 511);
+            this.Wheel0SpeedSlider.TabIndex = 8;
+            this.Wheel0SpeedSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            // 
             // Wheel1SpeedSlider
             // 
-            this.Wheel1SpeedSlider.Location = new System.Drawing.Point(10, 35);
+            this.Wheel1SpeedSlider.Location = new System.Drawing.Point(60, 60);
             this.Wheel1SpeedSlider.Maximum = 255;
             this.Wheel1SpeedSlider.Minimum = -255;
             this.Wheel1SpeedSlider.Name = "Wheel1SpeedSlider";
             this.Wheel1SpeedSlider.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.Wheel1SpeedSlider.Size = new System.Drawing.Size(45, 511);
-            this.Wheel1SpeedSlider.TabIndex = 8;
+            this.Wheel1SpeedSlider.TabIndex = 9;
             this.Wheel1SpeedSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
             // 
             // Wheel2SpeedSlider
             // 
-            this.Wheel2SpeedSlider.Location = new System.Drawing.Point(60, 35);
+            this.Wheel2SpeedSlider.Location = new System.Drawing.Point(110, 60);
             this.Wheel2SpeedSlider.Maximum = 255;
             this.Wheel2SpeedSlider.Minimum = -255;
             this.Wheel2SpeedSlider.Name = "Wheel2SpeedSlider";
             this.Wheel2SpeedSlider.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.Wheel2SpeedSlider.Size = new System.Drawing.Size(45, 511);
-            this.Wheel2SpeedSlider.TabIndex = 9;
+            this.Wheel2SpeedSlider.TabIndex = 10;
             this.Wheel2SpeedSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
             // 
             // Wheel3SpeedSlider
             // 
-            this.Wheel3SpeedSlider.Location = new System.Drawing.Point(110, 35);
+            this.Wheel3SpeedSlider.Location = new System.Drawing.Point(160, 60);
             this.Wheel3SpeedSlider.Maximum = 255;
             this.Wheel3SpeedSlider.Minimum = -255;
             this.Wheel3SpeedSlider.Name = "Wheel3SpeedSlider";
             this.Wheel3SpeedSlider.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.Wheel3SpeedSlider.Size = new System.Drawing.Size(45, 511);
-            this.Wheel3SpeedSlider.TabIndex = 10;
+            this.Wheel3SpeedSlider.TabIndex = 11;
             this.Wheel3SpeedSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
             // 
-            // Wheel4SpeedSlider
+            // label3
             // 
-            this.Wheel4SpeedSlider.Location = new System.Drawing.Point(160, 35);
-            this.Wheel4SpeedSlider.Maximum = 255;
-            this.Wheel4SpeedSlider.Minimum = -255;
-            this.Wheel4SpeedSlider.Name = "Wheel4SpeedSlider";
-            this.Wheel4SpeedSlider.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.Wheel4SpeedSlider.Size = new System.Drawing.Size(45, 511);
-            this.Wheel4SpeedSlider.TabIndex = 11;
-            this.Wheel4SpeedSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Wheel 0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(60, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Wheel 1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(110, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Wheel 2";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(160, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Wheel 3";
             // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 556);
-            this.Controls.Add(this.Wheel4SpeedSlider);
+            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Wheel3SpeedSlider);
             this.Controls.Add(this.Wheel2SpeedSlider);
             this.Controls.Add(this.Wheel1SpeedSlider);
+            this.Controls.Add(this.Wheel0SpeedSlider);
             this.Controls.Add(this.BtnDisconnect);
             this.Controls.Add(this.BtnConnect);
             this.Controls.Add(this.BtnSave);
@@ -190,10 +234,10 @@
             this.Name = "Interface";
             this.Text = "Interface";
             this.Load += new System.EventHandler(this.Interface_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel3SpeedSlider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Wheel4SpeedSlider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,10 +255,14 @@
         private System.Windows.Forms.Button BtnSave;
         private System.Windows.Forms.Button BtnConnect;
         private System.Windows.Forms.Button BtnDisconnect;
+        private System.Windows.Forms.TrackBar Wheel0SpeedSlider;
         private System.Windows.Forms.TrackBar Wheel1SpeedSlider;
         private System.Windows.Forms.TrackBar Wheel2SpeedSlider;
         private System.Windows.Forms.TrackBar Wheel3SpeedSlider;
-        private System.Windows.Forms.TrackBar Wheel4SpeedSlider;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 
