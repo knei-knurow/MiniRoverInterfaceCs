@@ -16,9 +16,6 @@ namespace MiniRoverInterfaceCs
     public partial class Interface : Form
     {
         public string ProgramVersion = @"0.0.0.3";
-        //public Thread SendDataThread;
-        public Thread RecieveDataThread;
-
         public Interface()
         {
             InitializeComponent();
