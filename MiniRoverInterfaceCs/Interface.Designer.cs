@@ -235,6 +235,26 @@
             this.BtnResetWheelSpeed.UseVisualStyleBackColor = true;
             this.BtnResetWheelSpeed.Click += new System.EventHandler(this.BtnResetWheelSpeed_Click);
             // 
+            // BtnSyncWheelSpeed
+            // 
+            this.BtnSyncWheelSpeed.Location = new System.Drawing.Point(210, 40);
+            this.BtnSyncWheelSpeed.Name = "BtnSyncWheelSpeed";
+            this.BtnSyncWheelSpeed.Size = new System.Drawing.Size(120, 25);
+            this.BtnSyncWheelSpeed.TabIndex = 17;
+            this.BtnSyncWheelSpeed.Text = "Sync Wheel Speed";
+            this.BtnSyncWheelSpeed.UseVisualStyleBackColor = true;
+            this.BtnSyncWheelSpeed.Click += new System.EventHandler(this.BtnSyncWheelSpeed_Click);
+            // 
+            // BtnResetWheelSpeed
+            // 
+            this.BtnResetWheelSpeed.Location = new System.Drawing.Point(210, 70);
+            this.BtnResetWheelSpeed.Name = "BtnResetWheelSpeed";
+            this.BtnResetWheelSpeed.Size = new System.Drawing.Size(120, 25);
+            this.BtnResetWheelSpeed.TabIndex = 18;
+            this.BtnResetWheelSpeed.Text = "Reset Wheel Speed";
+            this.BtnResetWheelSpeed.UseVisualStyleBackColor = true;
+            this.BtnResetWheelSpeed.Click += new System.EventHandler(this.BtnResetWheelSpeed_Click);
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
