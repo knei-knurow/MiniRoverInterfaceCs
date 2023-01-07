@@ -47,6 +47,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.BtnSyncWheelSpeed = new System.Windows.Forms.Button();
+            this.BtnResetWheelSpeed = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).BeginInit();
@@ -75,7 +77,7 @@
             // 
             this.BtnEdit.Location = new System.Drawing.Point(401, 4);
             this.BtnEdit.Name = "BtnEdit";
-            this.BtnEdit.Size = new System.Drawing.Size(75, 23);
+            this.BtnEdit.Size = new System.Drawing.Size(75, 25);
             this.BtnEdit.TabIndex = 2;
             this.BtnEdit.Text = "Edit";
             this.BtnEdit.UseVisualStyleBackColor = true;
@@ -103,7 +105,7 @@
             // 
             this.BtnSave.Location = new System.Drawing.Point(482, 4);
             this.BtnSave.Name = "BtnSave";
-            this.BtnSave.Size = new System.Drawing.Size(75, 23);
+            this.BtnSave.Size = new System.Drawing.Size(75, 25);
             this.BtnSave.TabIndex = 5;
             this.BtnSave.Text = "Save";
             this.BtnSave.UseVisualStyleBackColor = true;
@@ -113,7 +115,7 @@
             // 
             this.BtnConnect.Location = new System.Drawing.Point(564, 4);
             this.BtnConnect.Name = "BtnConnect";
-            this.BtnConnect.Size = new System.Drawing.Size(75, 23);
+            this.BtnConnect.Size = new System.Drawing.Size(75, 25);
             this.BtnConnect.TabIndex = 6;
             this.BtnConnect.Text = "Connect";
             this.BtnConnect.UseVisualStyleBackColor = true;
@@ -123,7 +125,7 @@
             // 
             this.BtnDisconnect.Location = new System.Drawing.Point(645, 4);
             this.BtnDisconnect.Name = "BtnDisconnect";
-            this.BtnDisconnect.Size = new System.Drawing.Size(75, 23);
+            this.BtnDisconnect.Size = new System.Drawing.Size(75, 25);
             this.BtnDisconnect.TabIndex = 7;
             this.BtnDisconnect.Text = "Disconnect";
             this.BtnDisconnect.UseVisualStyleBackColor = true;
@@ -172,6 +174,7 @@
             this.Wheel3SpeedSlider.Size = new System.Drawing.Size(45, 511);
             this.Wheel3SpeedSlider.TabIndex = 11;
             this.Wheel3SpeedSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.Wheel3SpeedSlider.Scroll += new System.EventHandler(this.Wheel3SpeedSlider_Scroll);
             // 
             // label3
             // 
@@ -209,12 +212,34 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Wheel 3";
             // 
+            // BtnSyncWheelSpeed
+            // 
+            this.BtnSyncWheelSpeed.Location = new System.Drawing.Point(210, 40);
+            this.BtnSyncWheelSpeed.Name = "BtnSyncWheelSpeed";
+            this.BtnSyncWheelSpeed.Size = new System.Drawing.Size(120, 25);
+            this.BtnSyncWheelSpeed.TabIndex = 17;
+            this.BtnSyncWheelSpeed.Text = "Sync Wheel Speed";
+            this.BtnSyncWheelSpeed.UseVisualStyleBackColor = true;
+            this.BtnSyncWheelSpeed.Click += new System.EventHandler(this.BtnSyncWheelSpeed_Click);
+            // 
+            // BtnResetWheelSpeed
+            // 
+            this.BtnResetWheelSpeed.Location = new System.Drawing.Point(210, 70);
+            this.BtnResetWheelSpeed.Name = "BtnResetWheelSpeed";
+            this.BtnResetWheelSpeed.Size = new System.Drawing.Size(120, 25);
+            this.BtnResetWheelSpeed.TabIndex = 18;
+            this.BtnResetWheelSpeed.Text = "Reset Wheel Speed";
+            this.BtnResetWheelSpeed.UseVisualStyleBackColor = true;
+            this.BtnResetWheelSpeed.Click += new System.EventHandler(this.BtnResetWheelSpeed_Click);
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.BtnResetWheelSpeed);
+            this.Controls.Add(this.BtnSyncWheelSpeed);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -263,6 +288,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button BtnSyncWheelSpeed;
+        private System.Windows.Forms.Button BtnResetWheelSpeed;
     }
 }
 
