@@ -109,5 +109,28 @@ namespace MiniRoverInterfaceCs
                 TxtRecievePort.Items.Add(comport);
             }
         }
+
+        bool WheelSpeedSliderSync = false;
+        private void BtnSyncWheelSpeed_Click(object sender, EventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            WheelSpeedSliderSync = !WheelSpeedSliderSync;
+            Wheel0SpeedSlider.Enabled = !Wheel0SpeedSlider.Enabled;
+            Wheel1SpeedSlider.Enabled = !Wheel1SpeedSlider.Enabled;
+            Wheel2SpeedSlider.Enabled = !Wheel2SpeedSlider.Enabled;
+        }
+
+        private void BtnResetWheelSpeed_Click(object sender, EventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+        }
+
+        private void Wheel3SpeedSlider_Scroll(object sender, EventArgs e)
+        {
+            if (WheelSpeedSliderSync == true)
+            {
+                Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value;
+            }
+        }
     }
 }
