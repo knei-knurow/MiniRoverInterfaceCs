@@ -15,7 +15,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.0.1.4";
+        public string ProgramVersion = @"0.0.1.5";
         public Interface()
         {
             InitializeComponent();
@@ -172,32 +172,58 @@ namespace MiniRoverInterfaceCs
 
         private void BtnSyncWheelAngle_Click(object sender, EventArgs e)
         {
+            Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel3AngleLabel.Text = @"0";
+            if (WheelAngleSliderSync == true) BtnSyncWheelAngle.Text = @"Sync Wheel Angle";
+            else BtnSyncWheelAngle.Text = @"Unsync Wheel Angle";
 
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            WheelAngleSliderSync = !WheelAngleSliderSync;
         }
 
         private void BtnResetWheelAngle_Click(object sender, EventArgs e)
         {
-
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel3AngleLabel.Text = @"0";
         }
 
         private void Wheel0AngleSlider_Scroll(object sender, EventArgs e)
         {
-
+            Wheel0AngleLabel.Text = Wheel0AngleSlider.Value.ToString();
+            if (WheelAngleSliderSync == true)
+            {
+                Wheel3AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel0AngleSlider.Value;
+                Wheel3AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel0AngleLabel.Text;
+            }
         }
 
         private void Wheel1AngleSlider_Scroll(object sender, EventArgs e)
         {
-
+            Wheel1AngleLabel.Text = Wheel1AngleSlider.Value.ToString();
+            if (WheelAngleSliderSync == true)
+            {
+                Wheel0AngleSlider.Value = Wheel3AngleSlider.Value = Wheel2AngleSlider.Value = Wheel1AngleSlider.Value;
+                Wheel0AngleLabel.Text = Wheel3AngleLabel.Text = Wheel2AngleLabel.Text = Wheel1AngleLabel.Text;
+            }
         }
 
         private void Wheel2AngleSlider_Scroll(object sender, EventArgs e)
         {
-
+            Wheel2AngleLabel.Text = Wheel2AngleSlider.Value.ToString();
+            if (WheelAngleSliderSync == true)
+            {
+                Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel3AngleSlider.Value = Wheel2AngleSlider.Value;
+                Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel3AngleLabel.Text = Wheel2AngleLabel.Text;
+            }
         }
 
         private void Wheel3AngleSlider_Scroll(object sender, EventArgs e)
         {
-
+            Wheel3AngleLabel.Text = Wheel3AngleSlider.Value.ToString();
+            if (WheelAngleSliderSync == true)
+            {
+                Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value;
+                Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel3AngleLabel.Text;
+            }
         }
 
         #endregion
