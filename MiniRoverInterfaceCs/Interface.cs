@@ -15,7 +15,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.0.1.2";
+        public string ProgramVersion = @"0.0.1.3";
         public Interface()
         {
             InitializeComponent();

@@ -49,10 +49,18 @@
             this.Wheel3Label = new System.Windows.Forms.Label();
             this.BtnSyncWheelSpeed = new System.Windows.Forms.Button();
             this.BtnResetWheelSpeed = new System.Windows.Forms.Button();
+            this.Wheel0AngleSlider = new System.Windows.Forms.TrackBar();
+            this.Wheel1AngleSlider = new System.Windows.Forms.TrackBar();
+            this.Wheel2AngleSlider = new System.Windows.Forms.TrackBar();
+            this.Wheel3AngleSlider = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel3SpeedSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel0AngleSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel1AngleSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel2AngleSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel3AngleSlider)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtRecievePort
@@ -235,12 +243,56 @@
             this.BtnResetWheelSpeed.UseVisualStyleBackColor = true;
             this.BtnResetWheelSpeed.Click += new System.EventHandler(this.BtnResetWheelSpeed_Click);
             // 
+            // Wheel0AngleSlider
+            // 
+            this.Wheel0AngleSlider.Location = new System.Drawing.Point(260, 450);
+            this.Wheel0AngleSlider.Maximum = 90;
+            this.Wheel0AngleSlider.Minimum = -90;
+            this.Wheel0AngleSlider.Name = "Wheel0AngleSlider";
+            this.Wheel0AngleSlider.Size = new System.Drawing.Size(181, 45);
+            this.Wheel0AngleSlider.TabIndex = 19;
+            this.Wheel0AngleSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            // 
+            // Wheel1AngleSlider
+            // 
+            this.Wheel1AngleSlider.Location = new System.Drawing.Point(260, 501);
+            this.Wheel1AngleSlider.Maximum = 90;
+            this.Wheel1AngleSlider.Minimum = -90;
+            this.Wheel1AngleSlider.Name = "Wheel1AngleSlider";
+            this.Wheel1AngleSlider.Size = new System.Drawing.Size(181, 45);
+            this.Wheel1AngleSlider.TabIndex = 20;
+            this.Wheel1AngleSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            // 
+            // Wheel2AngleSlider
+            // 
+            this.Wheel2AngleSlider.Location = new System.Drawing.Point(447, 450);
+            this.Wheel2AngleSlider.Maximum = 90;
+            this.Wheel2AngleSlider.Minimum = -90;
+            this.Wheel2AngleSlider.Name = "Wheel2AngleSlider";
+            this.Wheel2AngleSlider.Size = new System.Drawing.Size(181, 45);
+            this.Wheel2AngleSlider.TabIndex = 21;
+            this.Wheel2AngleSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            // 
+            // Wheel3AngleSlider
+            // 
+            this.Wheel3AngleSlider.Location = new System.Drawing.Point(447, 501);
+            this.Wheel3AngleSlider.Maximum = 90;
+            this.Wheel3AngleSlider.Minimum = -90;
+            this.Wheel3AngleSlider.Name = "Wheel3AngleSlider";
+            this.Wheel3AngleSlider.Size = new System.Drawing.Size(181, 45);
+            this.Wheel3AngleSlider.TabIndex = 22;
+            this.Wheel3AngleSlider.TickStyle = System.Windows.Forms.TickStyle.Both;
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.Wheel3AngleSlider);
+            this.Controls.Add(this.Wheel2AngleSlider);
+            this.Controls.Add(this.Wheel1AngleSlider);
+            this.Controls.Add(this.Wheel0AngleSlider);
             this.Controls.Add(this.BtnResetWheelSpeed);
             this.Controls.Add(this.BtnSyncWheelSpeed);
             this.Controls.Add(this.Wheel3Label);
@@ -266,6 +318,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel3SpeedSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel0AngleSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel1AngleSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel2AngleSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Wheel3AngleSlider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,6 +349,10 @@
         private System.Windows.Forms.Label Wheel3Label;
         private System.Windows.Forms.Button BtnSyncWheelSpeed;
         private System.Windows.Forms.Button BtnResetWheelSpeed;
+        private System.Windows.Forms.TrackBar Wheel0AngleSlider;
+        private System.Windows.Forms.TrackBar Wheel1AngleSlider;
+        private System.Windows.Forms.TrackBar Wheel2AngleSlider;
+        private System.Windows.Forms.TrackBar Wheel3AngleSlider;
     }
 }
 
