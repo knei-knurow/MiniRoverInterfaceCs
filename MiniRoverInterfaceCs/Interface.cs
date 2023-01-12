@@ -15,7 +15,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.0.1.3";
+        public string ProgramVersion = @"0.0.1.4";
         public Interface()
         {
             InitializeComponent();
@@ -110,10 +110,13 @@ namespace MiniRoverInterfaceCs
             }
         }
 
+        #region Slider Sync
+
         bool WheelSpeedSliderSync = false;
+        bool WheelAngleSliderSync = false;
         private void BtnSyncWheelSpeed_Click(object sender, EventArgs e)
         {
-            Wheel0Label.Text = Wheel1Label.Text = Wheel2Label.Text = Wheel3Label.Text = @"0";
+            Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text = @"0";
             if (WheelSpeedSliderSync == true)   BtnSyncWheelSpeed.Text = @"Sync Wheel Speed";
             else                                BtnSyncWheelSpeed.Text = @"Unsync Wheel Speed";
 
@@ -124,47 +127,79 @@ namespace MiniRoverInterfaceCs
         private void BtnResetWheelSpeed_Click(object sender, EventArgs e)
         {
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
-            Wheel0Label.Text = Wheel1Label.Text = Wheel2Label.Text = Wheel3Label.Text = @"0";
+            Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text = @"0";
         }
 
         private void Wheel0SpeedSlider_Scroll(object sender, EventArgs e)
         {
-            Wheel0Label.Text = Wheel0SpeedSlider.Value.ToString();
+            Wheel0SpeedLabel.Text = Wheel0SpeedSlider.Value.ToString();
             if (WheelSpeedSliderSync == true)
             {
                 Wheel3SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel0SpeedSlider.Value;
-                Wheel3Label.Text = Wheel1Label.Text = Wheel2Label.Text = Wheel0Label.Text;
+                Wheel3SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel0SpeedLabel.Text;
             }
         }
 
         private void Wheel1SpeedSlider_Scroll(object sender, EventArgs e)
         {
-            Wheel1Label.Text = Wheel1SpeedSlider.Value.ToString();
+            Wheel1SpeedLabel.Text = Wheel1SpeedSlider.Value.ToString();
             if (WheelSpeedSliderSync == true)
             {
                 Wheel0SpeedSlider.Value = Wheel3SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel1SpeedSlider.Value;
-                Wheel0Label.Text = Wheel3Label.Text = Wheel2Label.Text = Wheel1Label.Text;
+                Wheel0SpeedLabel.Text = Wheel3SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel1SpeedLabel.Text;
             }
         }
 
         private void Wheel2SpeedSlider_Scroll(object sender, EventArgs e)
         {
-            Wheel2Label.Text = Wheel2SpeedSlider.Value.ToString();
+            Wheel2SpeedLabel.Text = Wheel2SpeedSlider.Value.ToString();
             if (WheelSpeedSliderSync == true)
             {
                 Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = Wheel2SpeedSlider.Value;
-                Wheel0Label.Text = Wheel1Label.Text = Wheel3Label.Text = Wheel2Label.Text;
+                Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel3SpeedLabel.Text = Wheel2SpeedLabel.Text;
             }
         }
 
         private void Wheel3SpeedSlider_Scroll(object sender, EventArgs e)
         {
-            Wheel3Label.Text = Wheel3SpeedSlider.Value.ToString();
+            Wheel3SpeedLabel.Text = Wheel3SpeedSlider.Value.ToString();
             if (WheelSpeedSliderSync == true)
             {
                 Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value;
-                Wheel0Label.Text = Wheel1Label.Text = Wheel2Label.Text = Wheel3Label.Text;
+                Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text;
             }
         }
+
+        private void BtnSyncWheelAngle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnResetWheelAngle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wheel0AngleSlider_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wheel1AngleSlider_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wheel2AngleSlider_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wheel3AngleSlider_Scroll(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
     }
 }
