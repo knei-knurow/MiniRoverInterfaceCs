@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.SerialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.SerialPort2 = new System.IO.Ports.SerialPort(this.components);
+            this.SerialPortRecieve = new System.IO.Ports.SerialPort(this.components);
+            this.SerialPortSend = new System.IO.Ports.SerialPort(this.components);
             this.TxtRecievePort = new System.Windows.Forms.ComboBox();
             this.TxtSendPort = new System.Windows.Forms.ComboBox();
             this.BtnEdit = new System.Windows.Forms.Button();
@@ -72,7 +72,7 @@
             // TxtRecievePort
             // 
             this.TxtRecievePort.FormattingEnabled = true;
-            this.TxtRecievePort.Location = new System.Drawing.Point(274, 6);
+            this.TxtRecievePort.Location = new System.Drawing.Point(85, 5);
             this.TxtRecievePort.Name = "TxtRecievePort";
             this.TxtRecievePort.Size = new System.Drawing.Size(121, 21);
             this.TxtRecievePort.TabIndex = 0;
@@ -81,7 +81,7 @@
             // TxtSendPort
             // 
             this.TxtSendPort.FormattingEnabled = true;
-            this.TxtSendPort.Location = new System.Drawing.Point(72, 6);
+            this.TxtSendPort.Location = new System.Drawing.Point(280, 5);
             this.TxtSendPort.Name = "TxtSendPort";
             this.TxtSendPort.Size = new System.Drawing.Size(121, 21);
             this.TxtSendPort.TabIndex = 1;
@@ -89,7 +89,7 @@
             // 
             // BtnEdit
             // 
-            this.BtnEdit.Location = new System.Drawing.Point(401, 4);
+            this.BtnEdit.Location = new System.Drawing.Point(407, 3);
             this.BtnEdit.Name = "BtnEdit";
             this.BtnEdit.Size = new System.Drawing.Size(75, 25);
             this.BtnEdit.TabIndex = 2;
@@ -100,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(220, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 3;
@@ -109,7 +109,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 9);
+            this.label2.Location = new System.Drawing.Point(10, 10);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 4;
@@ -117,7 +117,7 @@
             // 
             // BtnSave
             // 
-            this.BtnSave.Location = new System.Drawing.Point(482, 4);
+            this.BtnSave.Location = new System.Drawing.Point(488, 3);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(75, 25);
             this.BtnSave.TabIndex = 5;
@@ -127,7 +127,7 @@
             // 
             // BtnConnect
             // 
-            this.BtnConnect.Location = new System.Drawing.Point(564, 4);
+            this.BtnConnect.Location = new System.Drawing.Point(570, 3);
             this.BtnConnect.Name = "BtnConnect";
             this.BtnConnect.Size = new System.Drawing.Size(75, 25);
             this.BtnConnect.TabIndex = 6;
@@ -137,7 +137,7 @@
             // 
             // BtnDisconnect
             // 
-            this.BtnDisconnect.Location = new System.Drawing.Point(645, 4);
+            this.BtnDisconnect.Location = new System.Drawing.Point(651, 3);
             this.BtnDisconnect.Name = "BtnDisconnect";
             this.BtnDisconnect.Size = new System.Drawing.Size(75, 25);
             this.BtnDisconnect.TabIndex = 7;
@@ -401,8 +401,8 @@
 
         #endregion
 
-        private System.IO.Ports.SerialPort SerialPort1;
-        private System.IO.Ports.SerialPort SerialPort2;
+        private System.IO.Ports.SerialPort SerialPortRecieve;
+        private System.IO.Ports.SerialPort SerialPortSend;
         private System.Windows.Forms.ComboBox TxtRecievePort;
         private System.Windows.Forms.ComboBox TxtSendPort;
         private System.Windows.Forms.Button BtnEdit;

@@ -15,7 +15,10 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.0.2.1";
+        public string ProgramVersion = @"0.0.3.1";
+        public string SerialPortRecieveString;
+        public Thread RecieveThread;
+        public Thread SendThread;
         public Interface()
         {
             InitializeComponent();
@@ -61,28 +64,48 @@ namespace MiniRoverInterfaceCs
 
         private void BtnConnect_Click(object sender, EventArgs e)
         {
-            if (TxtSendPort.Text != @"" && TxtRecievePort.Text != @"")
+            if (TxtRecievePort.Text != @"" && TxtSendPort.Text != @"")
             {
                 BtnDisconnect.Enabled = true;
                 BtnEdit.Enabled = false;
 
-                SerialPort1.PortName = TxtSendPort.Text;
-                SerialPort2.PortName = TxtRecievePort.Text;
+                SerialPortRecieve.PortName = TxtRecievePort.Text;
+                SerialPortSend.PortName = TxtSendPort.Text;
 
-                SerialPort1.Open();
-                SerialPort2.Open();
-
+                SerialPortRecieve.Open();
+                SerialPortSend.Open();
+                try
+                {
+                    RecieveThread = new Thread(SerialPortRecieveRead);
+                    RecieveThread.Start();
+                }
+                catch (Exception ConnectionException)
+                {
+                    MessageBox.Show(@"You done did f*cked up boi: " + ConnectionException.Message);
+                }
 
                 BtnConnect.Enabled = false;
             }
         }
 
+        private void SerialPortRecieveRead()
+        {
+            while (SerialPortRecieve.IsOpen)
+            {
+                if(SerialPortRecieve.BytesToRead > 0)
+                {
+                    SerialPortRecieveString = SerialPortRecieve.ReadExisting();
+                }
+                Thread.Sleep(500);
+            }
+        }
+
         private void BtnDisconnect_Click(object sender, EventArgs e)
         {
-            if (SerialPort1.IsOpen || SerialPort2.IsOpen)
+            if (SerialPortRecieve.IsOpen || SerialPortSend.IsOpen)
             {
-                SerialPort1.Close();
-                SerialPort2.Close();
+                SerialPortRecieve.Close();
+                SerialPortSend.Close();
                 BtnConnect.Enabled = true;
                 BtnEdit.Enabled = true;
 
