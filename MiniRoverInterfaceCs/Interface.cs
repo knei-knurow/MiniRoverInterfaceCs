@@ -133,7 +133,7 @@ namespace MiniRoverInterfaceCs
             }
         }
 
-        #region Slider Sync
+        #region Wheel Controls
 
         bool WheelSpeedSliderSync = false;
         bool WheelAngleSliderSync = false;
@@ -249,6 +249,159 @@ namespace MiniRoverInterfaceCs
             }
         }
 
+        #endregion
+
+        #region Arm Controls
+        private bool[] ArmRun = new bool[10];
+        private void BtnArm0Left_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm0Left_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm0Left()
+        {
+
+        }
+
+        private void BtnArm0Right_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm0Right_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm0Right()
+        {
+
+        }
+
+        private void BtnArm1Left_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm1Left_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm1Left()
+        {
+
+        }
+
+        private void BtnArm1Right_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm1Right_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm1Right()
+        {
+
+        }
+
+        private void BtnArm2Left_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm2Left_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm2Left()
+        {
+
+        }
+
+        private void BtnArm2Right_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm2Right_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm2Right()
+        {
+
+        }
+
+        private void BtnArm3Left_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm3Left_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm3Left()
+        {
+
+        }
+
+        private void BtnArm3Right_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm3Right_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm3Right()
+        {
+
+        }
+
+        private void BtnArm4Left_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm4Left_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm4Left()
+        {
+
+        }
+
+        private void BtnArm4Right_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void BtnArm4Right_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Arm4Right()
+        {
+
+        }
         #endregion
     }
 }

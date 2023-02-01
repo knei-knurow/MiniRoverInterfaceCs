@@ -367,6 +367,8 @@
             this.BtnArm0Left.TabIndex = 29;
             this.BtnArm0Left.Text = "Arm 0 left";
             this.BtnArm0Left.UseVisualStyleBackColor = true;
+            this.BtnArm0Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Left_MouseDown);
+            this.BtnArm0Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Left_MouseUp);
             // 
             // BtnArm0Right
             // 
@@ -376,6 +378,8 @@
             this.BtnArm0Right.TabIndex = 30;
             this.BtnArm0Right.Text = "Arm 0 right";
             this.BtnArm0Right.UseVisualStyleBackColor = true;
+            this.BtnArm0Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Right_MouseDown);
+            this.BtnArm0Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Right_MouseUp);
             // 
             // BtnArm1Left
             // 
@@ -385,6 +389,8 @@
             this.BtnArm1Left.TabIndex = 31;
             this.BtnArm1Left.Text = "Arm 1 left";
             this.BtnArm1Left.UseVisualStyleBackColor = true;
+            this.BtnArm1Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseDown);
+            this.BtnArm1Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseUp);
             // 
             // BtnArm1Right
             // 
@@ -394,6 +400,8 @@
             this.BtnArm1Right.TabIndex = 32;
             this.BtnArm1Right.Text = "Arm 1 right";
             this.BtnArm1Right.UseVisualStyleBackColor = true;
+            this.BtnArm1Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Right_MouseDown);
+            this.BtnArm1Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Right_MouseUp);
             // 
             // BtnArm2Left
             // 
@@ -403,6 +411,8 @@
             this.BtnArm2Left.TabIndex = 33;
             this.BtnArm2Left.Text = "Arm 2 left";
             this.BtnArm2Left.UseVisualStyleBackColor = true;
+            this.BtnArm2Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Left_MouseDown);
+            this.BtnArm2Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Left_MouseUp);
             // 
             // BtnArm2Right
             // 
@@ -412,6 +422,8 @@
             this.BtnArm2Right.TabIndex = 34;
             this.BtnArm2Right.Text = "Arm 2 right";
             this.BtnArm2Right.UseVisualStyleBackColor = true;
+            this.BtnArm2Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Right_MouseDown);
+            this.BtnArm2Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Right_MouseUp);
             // 
             // BtnArm3Left
             // 
@@ -421,6 +433,8 @@
             this.BtnArm3Left.TabIndex = 35;
             this.BtnArm3Left.Text = "Arm 3 left";
             this.BtnArm3Left.UseVisualStyleBackColor = true;
+            this.BtnArm3Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Left_MouseDown);
+            this.BtnArm3Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Left_MouseUp);
             // 
             // BtnArm3Right
             // 
@@ -430,6 +444,8 @@
             this.BtnArm3Right.TabIndex = 36;
             this.BtnArm3Right.Text = "Arm 3 right";
             this.BtnArm3Right.UseVisualStyleBackColor = true;
+            this.BtnArm3Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Right_MouseDown);
+            this.BtnArm3Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Right_MouseUp);
             // 
             // BtnArm4Left
             // 
@@ -439,6 +455,8 @@
             this.BtnArm4Left.TabIndex = 37;
             this.BtnArm4Left.Text = "Arm 4 left";
             this.BtnArm4Left.UseVisualStyleBackColor = true;
+            this.BtnArm4Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Left_MouseDown);
+            this.BtnArm4Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Left_MouseUp);
             // 
             // BtnArm4Right
             // 
@@ -448,6 +466,8 @@
             this.BtnArm4Right.TabIndex = 38;
             this.BtnArm4Right.Text = "Arm 4 right";
             this.BtnArm4Right.UseVisualStyleBackColor = true;
+            this.BtnArm4Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseDown);
+            this.BtnArm4Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseUp);
             // 
             // Interface
             // 
