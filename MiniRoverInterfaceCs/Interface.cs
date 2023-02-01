@@ -15,7 +15,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.0.3.1";
+        public string ProgramVersion = @"0.0.4.1";
         public string SerialPortRecieveString;
         public Thread RecieveThread;
         public Thread SendThread;

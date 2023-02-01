@@ -59,6 +59,16 @@
             this.Wheel1AngleLabel = new System.Windows.Forms.Label();
             this.Wheel2AngleLabel = new System.Windows.Forms.Label();
             this.Wheel3AngleLabel = new System.Windows.Forms.Label();
+            this.BtnArm0Left = new System.Windows.Forms.Button();
+            this.BtnArm0Right = new System.Windows.Forms.Button();
+            this.BtnArm1Left = new System.Windows.Forms.Button();
+            this.BtnArm1Right = new System.Windows.Forms.Button();
+            this.BtnArm2Left = new System.Windows.Forms.Button();
+            this.BtnArm2Right = new System.Windows.Forms.Button();
+            this.BtnArm3Left = new System.Windows.Forms.Button();
+            this.BtnArm3Right = new System.Windows.Forms.Button();
+            this.BtnArm4Left = new System.Windows.Forms.Button();
+            this.BtnArm4Right = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).BeginInit();
@@ -349,12 +359,112 @@
             this.Wheel3AngleLabel.TabIndex = 28;
             this.Wheel3AngleLabel.Text = "Wheel 3";
             // 
+            // BtnArm0Left
+            // 
+            this.BtnArm0Left.Location = new System.Drawing.Point(800, 200);
+            this.BtnArm0Left.Name = "BtnArm0Left";
+            this.BtnArm0Left.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm0Left.TabIndex = 29;
+            this.BtnArm0Left.Text = "Arm 0 left";
+            this.BtnArm0Left.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm0Right
+            // 
+            this.BtnArm0Right.Location = new System.Drawing.Point(880, 200);
+            this.BtnArm0Right.Name = "BtnArm0Right";
+            this.BtnArm0Right.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm0Right.TabIndex = 30;
+            this.BtnArm0Right.Text = "Arm 0 right";
+            this.BtnArm0Right.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm1Left
+            // 
+            this.BtnArm1Left.Location = new System.Drawing.Point(800, 230);
+            this.BtnArm1Left.Name = "BtnArm1Left";
+            this.BtnArm1Left.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm1Left.TabIndex = 31;
+            this.BtnArm1Left.Text = "Arm 1 left";
+            this.BtnArm1Left.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm1Right
+            // 
+            this.BtnArm1Right.Location = new System.Drawing.Point(880, 230);
+            this.BtnArm1Right.Name = "BtnArm1Right";
+            this.BtnArm1Right.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm1Right.TabIndex = 32;
+            this.BtnArm1Right.Text = "Arm 1 right";
+            this.BtnArm1Right.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm2Left
+            // 
+            this.BtnArm2Left.Location = new System.Drawing.Point(800, 260);
+            this.BtnArm2Left.Name = "BtnArm2Left";
+            this.BtnArm2Left.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm2Left.TabIndex = 33;
+            this.BtnArm2Left.Text = "Arm 2 left";
+            this.BtnArm2Left.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm2Right
+            // 
+            this.BtnArm2Right.Location = new System.Drawing.Point(880, 260);
+            this.BtnArm2Right.Name = "BtnArm2Right";
+            this.BtnArm2Right.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm2Right.TabIndex = 34;
+            this.BtnArm2Right.Text = "Arm 2 right";
+            this.BtnArm2Right.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm3Left
+            // 
+            this.BtnArm3Left.Location = new System.Drawing.Point(800, 290);
+            this.BtnArm3Left.Name = "BtnArm3Left";
+            this.BtnArm3Left.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm3Left.TabIndex = 35;
+            this.BtnArm3Left.Text = "Arm 3 left";
+            this.BtnArm3Left.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm3Right
+            // 
+            this.BtnArm3Right.Location = new System.Drawing.Point(880, 290);
+            this.BtnArm3Right.Name = "BtnArm3Right";
+            this.BtnArm3Right.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm3Right.TabIndex = 36;
+            this.BtnArm3Right.Text = "Arm 3 right";
+            this.BtnArm3Right.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm4Left
+            // 
+            this.BtnArm4Left.Location = new System.Drawing.Point(800, 320);
+            this.BtnArm4Left.Name = "BtnArm4Left";
+            this.BtnArm4Left.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm4Left.TabIndex = 37;
+            this.BtnArm4Left.Text = "Arm 4 left";
+            this.BtnArm4Left.UseVisualStyleBackColor = true;
+            // 
+            // BtnArm4Right
+            // 
+            this.BtnArm4Right.Location = new System.Drawing.Point(880, 320);
+            this.BtnArm4Right.Name = "BtnArm4Right";
+            this.BtnArm4Right.Size = new System.Drawing.Size(75, 25);
+            this.BtnArm4Right.TabIndex = 38;
+            this.BtnArm4Right.Text = "Arm 4 right";
+            this.BtnArm4Right.UseVisualStyleBackColor = true;
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(984, 601);
+            this.Controls.Add(this.BtnArm4Right);
+            this.Controls.Add(this.BtnArm4Left);
+            this.Controls.Add(this.BtnArm3Right);
+            this.Controls.Add(this.BtnArm3Left);
+            this.Controls.Add(this.BtnArm2Right);
+            this.Controls.Add(this.BtnArm2Left);
+            this.Controls.Add(this.BtnArm1Right);
+            this.Controls.Add(this.BtnArm1Left);
+            this.Controls.Add(this.BtnArm0Right);
+            this.Controls.Add(this.BtnArm0Left);
             this.Controls.Add(this.Wheel3AngleLabel);
             this.Controls.Add(this.Wheel2AngleLabel);
             this.Controls.Add(this.Wheel1AngleLabel);
@@ -431,6 +541,16 @@
         private System.Windows.Forms.Label Wheel1AngleLabel;
         private System.Windows.Forms.Label Wheel2AngleLabel;
         private System.Windows.Forms.Label Wheel3AngleLabel;
+        private System.Windows.Forms.Button BtnArm0Left;
+        private System.Windows.Forms.Button BtnArm0Right;
+        private System.Windows.Forms.Button BtnArm1Left;
+        private System.Windows.Forms.Button BtnArm1Right;
+        private System.Windows.Forms.Button BtnArm2Left;
+        private System.Windows.Forms.Button BtnArm2Right;
+        private System.Windows.Forms.Button BtnArm3Left;
+        private System.Windows.Forms.Button BtnArm3Right;
+        private System.Windows.Forms.Button BtnArm4Left;
+        private System.Windows.Forms.Button BtnArm4Right;
     }
 }
 
