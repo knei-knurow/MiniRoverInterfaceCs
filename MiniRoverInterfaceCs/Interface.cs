@@ -253,208 +253,207 @@ namespace MiniRoverInterfaceCs
 
         #endregion
 
-        public class ArmControls
+        #region Arm Controls
+        private bool[] ArmRun = new bool[10];
+        #region Arm 0 Controls
+        private void BtnArm0Left_MouseDown(object sender, MouseEventArgs e)
         {
-            private bool[] ArmRun = new bool[10];
-            #region Arm 0 Controls
-            private void BtnArm0Left_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[0] = true;
-                Arm0Left();
-            }
-
-            private void BtnArm0Left_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[0] = false;
-            }
-
-            public void Arm0Left()
-            {
-                while (ArmRun[0])
-                {
-
-                }
-            }
-
-            private void BtnArm0Right_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[1] = true;
-                Arm0Right();
-            }
-
-            private void BtnArm0Right_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[1] = false;
-            }
-
-            public void Arm0Right()
-            {
-                while (ArmRun[1])
-                {
-
-                }
-            }
-            #endregion
-
-            #region Arm 1 Controls
-            private void BtnArm1Left_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[2] = true;
-                Arm1Left();
-            }
-
-            private void BtnArm1Left_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[2] = false;
-            }
-
-            public void Arm1Left()
-            {
-                while (ArmRun[2])
-                {
-
-                }
-            }
-
-            private void BtnArm1Right_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[3] = true;
-                Arm1Right();
-            }
-
-            private void BtnArm1Right_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[3] = false;
-            }
-
-            public void Arm1Right()
-            {
-                while (ArmRun[3])
-                {
-
-                }
-            }
-            #endregion
-
-            #region Arm 2 Controls
-            private void BtnArm2Left_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[4] = true;
-                Arm2Left();
-            }
-
-            private void BtnArm2Left_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[4] = false;
-            }
-
-            public void Arm2Left()
-            {
-                while (ArmRun[4])
-                {
-
-                }
-            }
-
-            private void BtnArm2Right_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[5] = true;
-                Arm2Right();
-            }
-
-            private void BtnArm2Right_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[5] = false;
-            }
-
-            public void Arm2Right()
-            {
-                while (ArmRun[5])
-                {
-
-                }
-            }
-            #endregion
-
-            #region Arm 3 Controls
-            private void BtnArm3Left_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[6] = true;
-                Arm3Left();
-            }
-
-            private void BtnArm3Left_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[6] = false;
-            }
-
-            public void Arm3Left()
-            {
-                while (ArmRun[6])
-                {
-
-                }
-            }
-
-            private void BtnArm3Right_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[7] = true;
-                Arm3Right();
-            }
-
-            private void BtnArm3Right_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[7] = false;
-            }
-
-            public void Arm3Right()
-            {
-                while (ArmRun[7])
-                {
-
-                }
-            }
-            #endregion
-
-            #region Arm 4 Controls
-            private void BtnArm4Left_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[8] = true;
-                Arm4Left();
-            }
-
-            private void BtnArm4Left_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[8] = false;
-            }
-
-            public void Arm4Left()
-            {
-                while (ArmRun[8])
-                {
-
-                }
-            }
-
-            private void BtnArm4Right_MouseDown(object sender, MouseEventArgs e)
-            {
-                ArmRun[9] = true;
-                Arm4Right();
-            }
-
-            private void BtnArm4Right_MouseUp(object sender, MouseEventArgs e)
-            {
-                ArmRun[9] = false;
-            }
-
-            public void Arm4Right()
-            {
-                while (ArmRun[9])
-                {
-
-                }
-            }
-            #endregion
+            ArmRun[0] = true;
+            Arm0Left();
         }
+
+        private void BtnArm0Left_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[0] = false;
+        }
+
+        public void Arm0Left()
+        {
+            while (ArmRun[0])
+            {
+
+            }
+        }
+
+        private void BtnArm0Right_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[1] = true;
+            Arm0Right();
+        }
+
+        private void BtnArm0Right_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[1] = false;
+        }
+
+        public void Arm0Right()
+        {
+            while (ArmRun[1])
+            {
+
+            }
+        }
+        #endregion
+
+        #region Arm 1 Controls
+        private void BtnArm1Left_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[2] = true;
+            Arm1Left();
+        }
+
+        private void BtnArm1Left_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[2] = false;
+        }
+
+        public void Arm1Left()
+        {
+            while (ArmRun[2])
+            {
+
+            }
+        }
+
+        private void BtnArm1Right_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[3] = true;
+            Arm1Right();
+        }
+
+        private void BtnArm1Right_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[3] = false;
+        }
+
+        public void Arm1Right()
+        {
+            while (ArmRun[3])
+            {
+
+            }
+        }
+        #endregion
+
+        #region Arm 2 Controls
+        private void BtnArm2Left_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[4] = true;
+            Arm2Left();
+        }
+
+        private void BtnArm2Left_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[4] = false;
+        }
+
+        public void Arm2Left()
+        {
+            while (ArmRun[4])
+            {
+
+            }
+        }
+
+        private void BtnArm2Right_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[5] = true;
+            Arm2Right();
+        }
+
+        private void BtnArm2Right_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[5] = false;
+        }
+
+        public void Arm2Right()
+        {
+            while (ArmRun[5])
+            {
+
+            }
+        }
+        #endregion
+
+        #region Arm 3 Controls
+        private void BtnArm3Left_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[6] = true;
+            Arm3Left();
+        }
+
+        private void BtnArm3Left_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[6] = false;
+        }
+
+        public void Arm3Left()
+        {
+            while (ArmRun[6])
+            {
+
+            }
+        }
+
+        private void BtnArm3Right_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[7] = true;
+            Arm3Right();
+        }
+
+        private void BtnArm3Right_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[7] = false;
+        }
+
+        public void Arm3Right()
+        {
+            while (ArmRun[7])
+            {
+
+            }
+        }
+        #endregion
+
+        #region Arm 4 Controls
+        private void BtnArm4Left_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[8] = true;
+            Arm4Left();
+        }
+
+        private void BtnArm4Left_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[8] = false;
+        }
+
+        public void Arm4Left()
+        {
+            while (ArmRun[8])
+            {
+
+            }
+        }
+
+        private void BtnArm4Right_MouseDown(object sender, MouseEventArgs e)
+        {
+            ArmRun[9] = true;
+            Arm4Right();
+        }
+
+        private void BtnArm4Right_MouseUp(object sender, MouseEventArgs e)
+        {
+            ArmRun[9] = false;
+        }
+
+        public void Arm4Right()
+        {
+            while (ArmRun[9])
+            {
+
+            }
+        }
+        #endregion
+        #endregion
     }
 }
