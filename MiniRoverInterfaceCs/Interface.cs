@@ -8,7 +8,8 @@ namespace MiniRoverInterfaceCs
     public partial class Interface : Form
     {
         public string ProgramVersion = @"0.0.4.2";
-        public string SerialPortRecieveString;
+        public string RecieveString;
+        public string SendString;
         public Thread RecieveThread;
         public Thread SendThread;
         public Interface()
@@ -87,7 +88,7 @@ namespace MiniRoverInterfaceCs
             {
                 if(SerialPortRecieve.BytesToRead > 0)
                 {
-                    SerialPortRecieveString = SerialPortRecieve.ReadExisting();
+                    RecieveString = SerialPortRecieve.ReadExisting();
                 }
                 Thread.Sleep(500);
             }
