@@ -86,7 +86,7 @@ namespace MiniRoverInterfaceCs
         {
             while (SerialPortRecieve.IsOpen)
             {
-                if(SerialPortRecieve.BytesToRead > 0)
+                if (SerialPortRecieve.BytesToRead > 0)
                 {
                     RecieveString = SerialPortRecieve.ReadExisting();
                 }
@@ -135,8 +135,8 @@ namespace MiniRoverInterfaceCs
         private void BtnSyncWheelSpeed_Click(object sender, EventArgs e)
         {
             Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text = @"0";
-            if (WheelSpeedSliderSync == true)   BtnSyncWheelSpeed.Text = @"Sync Wheel Speed";
-            else                                BtnSyncWheelSpeed.Text = @"Unsync Wheel Speed";
+            if (WheelSpeedSliderSync == true) BtnSyncWheelSpeed.Text = @"Sync Wheel Speed";
+            else BtnSyncWheelSpeed.Text = @"Unsync Wheel Speed";
 
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
             WheelSpeedSliderSync = !WheelSpeedSliderSync;
