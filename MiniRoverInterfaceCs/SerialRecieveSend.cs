@@ -12,7 +12,7 @@ namespace MiniRoverInterfaceCs
     {
         public string SerialSend()
         {
-            string SendString = "AT+";
+            //string SendString = "AT+";
 
             return SendString;
         }
