@@ -13,7 +13,7 @@ namespace MiniRoverInterfaceCs
         public string SerialSend()
         {
             string SendString = "AT+";
-
+            SendString += Interface.Wheel0SpeedSlider.Value.ToString();
             return SendString;
         }
     }
