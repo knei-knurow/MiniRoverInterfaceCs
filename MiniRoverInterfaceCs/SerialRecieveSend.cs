@@ -37,6 +37,11 @@ namespace MiniRoverInterfaceCs
             SendBytes[17] = ArmRun[2];
             SendBytes[18] = ArmRun[3];
             SendBytes[19] = ArmRun[4];
+            SendBytes[20] = 0b00000000;
+            for (int i = 0; i < SendBytes.Length - 1; i++)
+            {
+                SendBytes[20] ^= SendBytes[i];
+            }
             return Encoding.ASCII.GetString(SendBytes);
         }
     }
