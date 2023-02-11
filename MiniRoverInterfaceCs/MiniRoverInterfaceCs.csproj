@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SerialRecieveSend.cs" />
+    <Compile Include="SerialRecieveSend.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interface.cs">
       <SubType>Form</SubType>
     </Compile>

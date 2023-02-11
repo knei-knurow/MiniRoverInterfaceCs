@@ -7,7 +7,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.0.5.1";
+        public string ProgramVersion = @"0.0.5.2";
         public string RecieveString;
         public string SendString;
         public Thread RecieveThread;
@@ -247,114 +247,114 @@ namespace MiniRoverInterfaceCs
         #endregion
 
         #region Arm Controls
-        public bool[] ArmRun = new bool[10];
+        public byte[] ArmRun = new byte[5];
         #region Arm 0 Controls
         private void BtnArm0Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[0] = true;
+            ArmRun[0] = 1;
         }
 
         private void BtnArm0Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[0] = false;
+            ArmRun[0] = 0;
         }
 
         private void BtnArm0Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[1] = true;
+            ArmRun[0] = 2;
         }
 
         private void BtnArm0Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[1] = false;
+            ArmRun[0] = 0;
         }
         #endregion
 
         #region Arm 1 Controls
         private void BtnArm1Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[2] = true;
+            ArmRun[1] = 1;
         }
 
         private void BtnArm1Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[2] = false;
+            ArmRun[1] = 0;
         }
 
         private void BtnArm1Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[3] = true;
+            ArmRun[1] = 2;
         }
 
         private void BtnArm1Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[3] = false;
+            ArmRun[1] = 0;
         }
         #endregion
 
         #region Arm 2 Controls
         private void BtnArm2Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[4] = true;
+            ArmRun[2] = 1;
         }
 
         private void BtnArm2Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[4] = false;
+            ArmRun[2] = 0;
         }
 
         private void BtnArm2Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[5] = true;
+            ArmRun[2] = 2;
         }
 
         private void BtnArm2Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[5] = false;
+            ArmRun[2] = 0;
         }
         #endregion
 
         #region Arm 3 Controls
         private void BtnArm3Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[6] = true;
+            ArmRun[3] = 1;
         }
 
         private void BtnArm3Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[6] = false;
+            ArmRun[3] = 0;
         }
 
         private void BtnArm3Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[7] = true;
+            ArmRun[3] = 2;
         }
 
         private void BtnArm3Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[7] = false;
+            ArmRun[3] = 0;
         }
         #endregion
 
         #region Arm 4 Controls
         private void BtnArm4Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[8] = true;
+            ArmRun[4] = 1;
         }
 
         private void BtnArm4Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[8] = false;
+            ArmRun[4] = 0;
         }
 
         private void BtnArm4Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[9] = true;
+            ArmRun[4] = 2;
         }
 
         private void BtnArm4Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[9] = false;
+            ArmRun[4] = 0;
         }
         #endregion
         #endregion
