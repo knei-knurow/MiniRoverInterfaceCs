@@ -7,7 +7,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.1.0.0";
+        public string ProgramVersion = @"0.1.0.1";
         public string RecieveString;
         public string SendString;
         public Thread RecieveThread;
@@ -41,7 +41,7 @@ namespace MiniRoverInterfaceCs
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            if ((TxtSendPort.Text != TxtRecievePort.Text) && TxtSendPort.Text != @"" && TxtRecievePort.Text != @"")
+            if ((TxtSendPort.Text != TxtRecievePort.Text) && TxtSendPort.Text != @"" /*&& TxtRecievePort.Text != @""*/)
             {
                 BtnEdit.Enabled = true;
                 BtnConnect.Enabled = true;
@@ -58,17 +58,17 @@ namespace MiniRoverInterfaceCs
 
         private void BtnConnect_Click(object sender, EventArgs e)
         {
-            if (TxtRecievePort.Text != @"" && TxtSendPort.Text != @"")
+            if (/*TxtRecievePort.Text != @"" && */TxtSendPort.Text != @"")
             {
                 BtnDisconnect.Enabled = true;
                 BtnEdit.Enabled = false;
 
-                SerialPortRecieve.PortName = TxtRecievePort.Text;
+                //SerialPortRecieve.PortName = TxtRecievePort.Text;
                 SerialPortSend.PortName = TxtSendPort.Text;
 
-                SerialPortRecieve.Open();
+                //SerialPortRecieve.Open();
                 SerialPortSend.Open();
-                try
+                /*try
                 {
                     RecieveThread = new Thread(SerialPortRecieveRead);
                     RecieveThread.Start();
@@ -76,13 +76,13 @@ namespace MiniRoverInterfaceCs
                 catch (Exception ConnectionException)
                 {
                     MessageBox.Show(@"You done did f*cked up boi: " + ConnectionException.Message);
-                }
+                }*/
 
                 BtnConnect.Enabled = false;
             }
         }
 
-        private void SerialPortRecieveRead()
+        /*private void SerialPortRecieveRead()
         {
             while (SerialPortRecieve.IsOpen)
             {
@@ -92,13 +92,13 @@ namespace MiniRoverInterfaceCs
                 }
                 Thread.Sleep(500);
             }
-        }
+        }*/
 
         private void BtnDisconnect_Click(object sender, EventArgs e)
         {
-            if (SerialPortRecieve.IsOpen || SerialPortSend.IsOpen)
+            if (/*SerialPortRecieve.IsOpen || */SerialPortSend.IsOpen)
             {
-                SerialPortRecieve.Close();
+                //SerialPortRecieve.Close();
                 SerialPortSend.Close();
                 BtnConnect.Enabled = true;
                 BtnEdit.Enabled = true;
