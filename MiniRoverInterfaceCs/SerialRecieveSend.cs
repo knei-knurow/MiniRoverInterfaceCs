@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.IO.Ports;
-using System.Drawing.Text;
 
 namespace MiniRoverInterfaceCs
 {
@@ -28,10 +23,10 @@ namespace MiniRoverInterfaceCs
             else SendBytes[9] = 1;
             if (Wheel3SpeedSlider.Value < 0) SendBytes[10] = 0;
             else SendBytes[10] = 1;
-            SendBytes[11] = 0;                                          //Wheel Angle
-            SendBytes[12] = 0;                                          //Need to figure them out
-            SendBytes[13] = 0;
-            SendBytes[14] = 0;
+            SendBytes[11] = (byte)(Wheel0AngleSlider.Value + 90);              //Wheel Angle
+            SendBytes[12] = (byte)(Wheel1AngleSlider.Value + 90);                                          //Need to figure them out
+            SendBytes[13] = (byte)(Wheel2AngleSlider.Value + 90);
+            SendBytes[14] = (byte)(Wheel3AngleSlider.Value + 90);
             SendBytes[15] = ArmRun[0];                                  //Arm Directions
             SendBytes[16] = ArmRun[1];
             SendBytes[17] = ArmRun[2];
