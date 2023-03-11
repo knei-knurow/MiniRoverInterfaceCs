@@ -5,20 +5,16 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface
     {
-        public string SerialSend()
+        public byte[] SerialSend()
         {
             byte[] SendBytes = new byte[21];
             SendBytes[0] = 65;                                          //AT+
             SendBytes[1] = 84;
             SendBytes[2] = 43;
-            SendBytes[3] = (byte)Math.Abs(Wheel0SpeedSlider.Value);     //System.Console.WriteLine(SendBytes[3]);    //Wheel Speed
-            //Wheel0SpeedLabel.Text = SendBytes[3].ToString();
-            SendBytes[4] = (byte)Math.Abs(Wheel1SpeedSlider.Value); //System.Console.WriteLine(SendBytes[4]);
-            //Wheel1SpeedLabel.Text = SendBytes[4].ToString();
-            SendBytes[5] = (byte)Math.Abs(Wheel2SpeedSlider.Value); //System.Console.WriteLine(SendBytes[5]);
-            Wheel2SpeedLabel.Text = SendBytes[5].ToString();
-            SendBytes[6] = (byte)Math.Abs(Wheel3SpeedSlider.Value); //System.Console.WriteLine(SendBytes[6]);
-            //Wheel3SpeedLabel.Text = SendBytes[6].ToString();
+            SendBytes[3] = (byte)Math.Abs(Wheel0SpeedSlider.Value);     //Wheel Speed
+            SendBytes[4] = (byte)Math.Abs(Wheel1SpeedSlider.Value); 
+            SendBytes[5] = (byte)Math.Abs(Wheel2SpeedSlider.Value); 
+            SendBytes[6] = (byte)Math.Abs(Wheel3SpeedSlider.Value); 
             if (Wheel0SpeedSlider.Value < 0) SendBytes[7] = 0;          //Wheel Speed Orientation
             else SendBytes[7] = 1;
             if (Wheel1SpeedSlider.Value < 0) SendBytes[8] = 0;
@@ -28,7 +24,6 @@ namespace MiniRoverInterfaceCs
             if (Wheel3SpeedSlider.Value < 0) SendBytes[10] = 0;
             else SendBytes[10] = 1;
             SendBytes[11] = (byte)(Wheel0AngleSlider.Value + 90);              //Wheel Angle
-            SendBytes[12] = (byte)(Wheel1AngleSlider.Value + 90);                                          //Need to figure them out
             SendBytes[13] = (byte)(Wheel2AngleSlider.Value + 90);
             SendBytes[14] = (byte)(Wheel3AngleSlider.Value + 90);
             SendBytes[15] = ArmRun[0];                                  //Arm Directions
@@ -37,7 +32,7 @@ namespace MiniRoverInterfaceCs
             SendBytes[18] = ArmRun[3];
             SendBytes[19] = ArmRun[4];
             SendBytes[20] = 0b00000000;
-            for (int i = 0; i < SendBytes.Length - 1; i++)
+            for (int i = 0; i < SendBytes.Length - 1; i++)      //Control Sum
             {
                 SendBytes[20] ^= SendBytes[i];
             }
@@ -47,10 +42,12 @@ namespace MiniRoverInterfaceCs
             //string SerialSendOut = (new System.Text.Encoding("Windows-1252")).GetString(SendBytes);
             //return SerialSendOut;
 
-            char[] SerialSendMid = Array.ConvertAll(SendBytes, Convert.ToChar);
-            string SerialSendOut = new string(SerialSendMid);
-            Wheel3SpeedLabel.Text = SerialSendOut; 
-            return SerialSendOut;
+            //char[] SerialSendMid = Array.ConvertAll(SendBytes, Convert.ToChar);
+            //string SerialSendOut = new string(SerialSendMid);
+            //Wheel3SpeedLabel.Text = SerialSendOut; 
+            //return SerialSendOut;
+
+            return SendBytes;
         }
     }
 }

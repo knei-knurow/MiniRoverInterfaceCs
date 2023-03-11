@@ -7,7 +7,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.1.0.2";
+        public string ProgramVersion = @"0.1.1.0";
         public string RecieveString;
         public string SendString;
         public Thread RecieveThread;
@@ -140,14 +140,14 @@ namespace MiniRoverInterfaceCs
 
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
             WheelSpeedSliderSync = !WheelSpeedSliderSync;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnResetWheelSpeed_Click(object sender, EventArgs e)
         {
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
             Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text = @"0";
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel0SpeedSlider_Scroll(object sender, EventArgs e)
@@ -158,7 +158,7 @@ namespace MiniRoverInterfaceCs
                 Wheel3SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel0SpeedSlider.Value;
                 Wheel3SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel0SpeedLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel1SpeedSlider_Scroll(object sender, EventArgs e)
@@ -169,7 +169,7 @@ namespace MiniRoverInterfaceCs
                 Wheel0SpeedSlider.Value = Wheel3SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel1SpeedSlider.Value;
                 Wheel0SpeedLabel.Text = Wheel3SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel1SpeedLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel2SpeedSlider_Scroll(object sender, EventArgs e)
@@ -180,19 +180,17 @@ namespace MiniRoverInterfaceCs
                 Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = Wheel2SpeedSlider.Value;
                 Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel3SpeedLabel.Text = Wheel2SpeedLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel3SpeedSlider_Scroll(object sender, EventArgs e)
         {
-            //Wheel3SpeedLabel.Text = Wheel3SpeedSlider.Value.ToString();
             if (WheelSpeedSliderSync == true)
             {
                 Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value;
-                //Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text;
+                Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
-            //Wheel3SpeedLabel.Text = SerialSend().ToString();
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
 
@@ -205,14 +203,14 @@ namespace MiniRoverInterfaceCs
 
             Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
             WheelAngleSliderSync = !WheelAngleSliderSync;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnResetWheelAngle_Click(object sender, EventArgs e)
         {
             Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
             Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel3AngleLabel.Text = @"0";
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel0AngleSlider_Scroll(object sender, EventArgs e)
@@ -223,7 +221,7 @@ namespace MiniRoverInterfaceCs
                 Wheel3AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel0AngleSlider.Value;
                 Wheel3AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel0AngleLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel1AngleSlider_Scroll(object sender, EventArgs e)
@@ -234,7 +232,7 @@ namespace MiniRoverInterfaceCs
                 Wheel0AngleSlider.Value = Wheel3AngleSlider.Value = Wheel2AngleSlider.Value = Wheel1AngleSlider.Value;
                 Wheel0AngleLabel.Text = Wheel3AngleLabel.Text = Wheel2AngleLabel.Text = Wheel1AngleLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel2AngleSlider_Scroll(object sender, EventArgs e)
@@ -245,7 +243,7 @@ namespace MiniRoverInterfaceCs
                 Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel3AngleSlider.Value = Wheel2AngleSlider.Value;
                 Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel3AngleLabel.Text = Wheel2AngleLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void Wheel3AngleSlider_Scroll(object sender, EventArgs e)
@@ -256,7 +254,7 @@ namespace MiniRoverInterfaceCs
                 Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value;
                 Wheel0AngleLabel.Text = Wheel1AngleLabel.Text = Wheel2AngleLabel.Text = Wheel3AngleLabel.Text;
             }
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
         #endregion
@@ -267,25 +265,25 @@ namespace MiniRoverInterfaceCs
         private void BtnArm0Left_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[0] = 1;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm0Left_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[0] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm0Right_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[0] = 2;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm0Right_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[0] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
 
@@ -293,25 +291,25 @@ namespace MiniRoverInterfaceCs
         private void BtnArm1Left_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[1] = 1;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm1Left_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[1] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm1Right_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[1] = 2;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm1Right_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[1] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
 
@@ -319,25 +317,25 @@ namespace MiniRoverInterfaceCs
         private void BtnArm2Left_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[2] = 1;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm2Left_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[2] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm2Right_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[2] = 2;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm2Right_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[2] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
 
@@ -345,25 +343,25 @@ namespace MiniRoverInterfaceCs
         private void BtnArm3Left_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[3] = 1;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm3Left_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[3] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm3Right_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[3] = 2;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm3Right_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[3] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
 
@@ -371,25 +369,25 @@ namespace MiniRoverInterfaceCs
         private void BtnArm4Left_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[4] = 1;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm4Left_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[4] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm4Right_MouseDown(object sender, MouseEventArgs e)
         {
             ArmRun[4] = 2;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm4Right_MouseUp(object sender, MouseEventArgs e)
         {
             ArmRun[4] = 0;
-            SerialPortSend.Write(SerialSend());
+            SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
         #endregion
