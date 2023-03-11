@@ -11,10 +11,14 @@ namespace MiniRoverInterfaceCs
             SendBytes[0] = 65;                                          //AT+
             SendBytes[1] = 84;
             SendBytes[2] = 43;
-            SendBytes[3] = (byte)Math.Abs(Wheel0SpeedSlider.Value);     //Wheel Speed
-            SendBytes[4] = (byte)Math.Abs(Wheel1SpeedSlider.Value);
-            SendBytes[5] = (byte)Math.Abs(Wheel2SpeedSlider.Value);
-            SendBytes[6] = (byte)Math.Abs(Wheel3SpeedSlider.Value);
+            SendBytes[3] = (byte)Math.Abs(Wheel0SpeedSlider.Value);     //System.Console.WriteLine(SendBytes[3]);    //Wheel Speed
+            //Wheel0SpeedLabel.Text = SendBytes[3].ToString();
+            SendBytes[4] = (byte)Math.Abs(Wheel1SpeedSlider.Value); //System.Console.WriteLine(SendBytes[4]);
+            //Wheel1SpeedLabel.Text = SendBytes[4].ToString();
+            SendBytes[5] = (byte)Math.Abs(Wheel2SpeedSlider.Value); //System.Console.WriteLine(SendBytes[5]);
+            Wheel2SpeedLabel.Text = SendBytes[5].ToString();
+            SendBytes[6] = (byte)Math.Abs(Wheel3SpeedSlider.Value); //System.Console.WriteLine(SendBytes[6]);
+            //Wheel3SpeedLabel.Text = SendBytes[6].ToString();
             if (Wheel0SpeedSlider.Value < 0) SendBytes[7] = 0;          //Wheel Speed Orientation
             else SendBytes[7] = 1;
             if (Wheel1SpeedSlider.Value < 0) SendBytes[8] = 0;
@@ -37,7 +41,16 @@ namespace MiniRoverInterfaceCs
             {
                 SendBytes[20] ^= SendBytes[i];
             }
-            return Encoding.ASCII.GetString(SendBytes);
+            //Wheel3SpeedLabel.Text = Encoding("Windows-1252").GetString(SendBytes);
+            //return Encoding.UTF8.GetString(SendBytes);     //Encoding.ASCII.GetString(SendBytes);
+
+            //string SerialSendOut = (new System.Text.Encoding("Windows-1252")).GetString(SendBytes);
+            //return SerialSendOut;
+
+            char[] SerialSendMid = Array.ConvertAll(SendBytes, Convert.ToChar);
+            string SerialSendOut = new string(SerialSendMid);
+            Wheel3SpeedLabel.Text = SerialSendOut; 
+            return SerialSendOut;
         }
     }
 }

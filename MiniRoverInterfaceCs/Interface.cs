@@ -7,7 +7,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.1.0.1";
+        public string ProgramVersion = @"0.1.0.2";
         public string RecieveString;
         public string SendString;
         public Thread RecieveThread;
@@ -185,13 +185,14 @@ namespace MiniRoverInterfaceCs
 
         private void Wheel3SpeedSlider_Scroll(object sender, EventArgs e)
         {
-            Wheel3SpeedLabel.Text = Wheel3SpeedSlider.Value.ToString();
+            //Wheel3SpeedLabel.Text = Wheel3SpeedSlider.Value.ToString();
             if (WheelSpeedSliderSync == true)
             {
                 Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value;
-                Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text;
+                //Wheel0SpeedLabel.Text = Wheel1SpeedLabel.Text = Wheel2SpeedLabel.Text = Wheel3SpeedLabel.Text;
             }
             SerialPortSend.Write(SerialSend());
+            //Wheel3SpeedLabel.Text = SerialSend().ToString();
         }
         #endregion
 

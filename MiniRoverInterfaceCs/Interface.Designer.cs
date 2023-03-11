@@ -235,7 +235,7 @@
             this.Wheel3SpeedLabel.AutoSize = true;
             this.Wheel3SpeedLabel.Location = new System.Drawing.Point(160, 45);
             this.Wheel3SpeedLabel.Name = "Wheel3SpeedLabel";
-            this.Wheel3SpeedLabel.Size = new System.Drawing.Size(47, 13);
+            this.Wheel3SpeedLabel.Size = new System.Drawing.Size(1047, 13);
             this.Wheel3SpeedLabel.TabIndex = 16;
             this.Wheel3SpeedLabel.Text = "Wheel 3";
             // 
