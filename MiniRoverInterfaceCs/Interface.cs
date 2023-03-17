@@ -7,7 +7,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface : Form
     {
-        public string ProgramVersion = @"0.1.1.0";
+        public string ProgramVersion = @"0.1.2.0";
         public string RecieveString;
         public string SendString;
         public Thread RecieveThread;
@@ -260,29 +260,29 @@ namespace MiniRoverInterfaceCs
         #endregion
 
         #region Arm Controls
-        public byte[] ArmRun = new byte[5];
+        public byte[] ArmRun = new byte[2];
         #region Arm 0 Controls
         private void BtnArm0Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[0] = 1;
+            ArmRun[0] |= 0b00000001;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm0Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[0] = 0;
+            ArmRun[0] &= 0b11111110;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm0Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[0] = 2;
+            ArmRun[0] |= 0b00000010;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm0Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[0] = 0;
+            ArmRun[0] &= 0b11111101;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
@@ -290,25 +290,25 @@ namespace MiniRoverInterfaceCs
         #region Arm 1 Controls
         private void BtnArm1Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[1] = 1;
+            ArmRun[0] |= 0b00000100;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm1Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[1] = 0;
+            ArmRun[0] &= 0b11111011;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm1Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[1] = 2;
+            ArmRun[0] |= 0b00001000;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm1Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[1] = 0;
+            ArmRun[0] &= 0b11110111;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
@@ -316,25 +316,25 @@ namespace MiniRoverInterfaceCs
         #region Arm 2 Controls
         private void BtnArm2Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[2] = 1;
+            ArmRun[0] |= 0b00010000;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm2Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[2] = 0;
+            ArmRun[0] &= 0b11101111;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm2Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[2] = 2;
+            ArmRun[0] |= 0b00100000;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm2Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[2] = 0;
+            ArmRun[0] &= 0b11011111;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
@@ -342,25 +342,25 @@ namespace MiniRoverInterfaceCs
         #region Arm 3 Controls
         private void BtnArm3Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[3] = 1;
+            ArmRun[0] |= 0b01000000;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm3Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[3] = 0;
+            ArmRun[0] &= 0b10111111;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm3Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[3] = 2;
+            ArmRun[0] |= 0b10000000;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm3Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[3] = 0;
+            ArmRun[0] &= 0b01111111;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion
@@ -368,25 +368,25 @@ namespace MiniRoverInterfaceCs
         #region Arm 4 Controls
         private void BtnArm4Left_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[4] = 1;
+            ArmRun[1] |= 0b00000001;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm4Left_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[4] = 0;
+            ArmRun[1] &= 0b11111110;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm4Right_MouseDown(object sender, MouseEventArgs e)
         {
-            ArmRun[4] = 2;
+            ArmRun[1] |= 0b00000010;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
 
         private void BtnArm4Right_MouseUp(object sender, MouseEventArgs e)
         {
-            ArmRun[4] = 0;
+            ArmRun[1] &= 0b11111101;
             SerialPortSend.Write(SerialSend(), 0, 21);
         }
         #endregion

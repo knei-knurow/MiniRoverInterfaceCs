@@ -28,9 +28,9 @@ namespace MiniRoverInterfaceCs
             SendBytes[14] = (byte)(Wheel3AngleSlider.Value + 90);
             SendBytes[15] = ArmRun[0];                                  //Arm Directions
             SendBytes[16] = ArmRun[1];
-            SendBytes[17] = ArmRun[2];
-            SendBytes[18] = ArmRun[3];
-            SendBytes[19] = ArmRun[4];
+            SendBytes[17] = 0;  //ArmRun[2];
+            SendBytes[18] = 0;  //ArmRun[3];
+            SendBytes[19] = 0;  //ArmRun[4];
             SendBytes[20] = 0b00000000;
             for (int i = 0; i < SendBytes.Length - 1; i++)      //Control Sum
             {
