@@ -52,7 +52,7 @@ namespace MiniRoverInterfaceCs
             {
                 SerialPortSend.Write(SendBytes, 0, 21);
             }
-            catch (SendException)
+            catch (Exception SendException)
             {
                 MessageBox.Show(@"Ayo bruh: " + SendException.Message);
             }
