@@ -24,6 +24,7 @@ namespace MiniRoverInterfaceCs
             if (Wheel3SpeedSlider.Value < 0) SendBytes[10] = 0;
             else SendBytes[10] = 1;
             SendBytes[11] = (byte)(Wheel0AngleSlider.Value + 90);              //Wheel Angle
+            SendBytes[12] = (byte)(Wheel1AngleSlider.Value + 90);
             SendBytes[13] = (byte)(Wheel2AngleSlider.Value + 90);
             SendBytes[14] = (byte)(Wheel3AngleSlider.Value + 90);
             SendBytes[15] = ArmRun[0];                                  //Arm Directions
