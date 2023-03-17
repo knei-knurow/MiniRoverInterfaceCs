@@ -5,7 +5,7 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface
     {
-        public byte[] SerialSend()
+        public void SerialSend()
         {
             byte[] SendBytes = new byte[21];
             SendBytes[0] = 65;                                          //AT+
@@ -48,7 +48,14 @@ namespace MiniRoverInterfaceCs
             //Wheel3SpeedLabel.Text = SerialSendOut; 
             //return SerialSendOut;
 
-            return SendBytes;
+            try
+            {
+                SerialPortSend.Write(SendBytes, 0, 21);
+            }
+            catch (SendException)
+            {
+                MessageBox.Show(@"Ayo bruh: " + SendException.Message);
+            }
         }
     }
 }
