@@ -137,5 +137,103 @@ namespace MiniRoverInterfaceCs
             SerialSend();
         }
         #endregion
+
+        #region Wheel Quick Actions
+        private void BtnForward_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 255;
+            SerialSend();
+        }
+
+        private void BtnForward_MouseUp(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            SerialSend();
+        }
+
+        private void BtnForwardLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = 255;
+            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = 170;
+            Wheel0AngleSlider.Value = -10;
+            Wheel1AngleSlider.Value = -15;
+            Wheel2AngleSlider.Value = 10;
+            Wheel3AngleSlider.Value = 15;
+            SerialSend();
+        }
+
+        private void BtnForwardLeft_MouseUp(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            SerialSend();
+        }
+
+        private void BtnForwardRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = 170;
+            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = 255;
+            Wheel0AngleSlider.Value = 15;
+            Wheel1AngleSlider.Value = 10;
+            Wheel2AngleSlider.Value = -15;
+            Wheel3AngleSlider.Value = -10;
+            SerialSend();
+        }
+
+        private void BtnForwardRight_MouseUp(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            SerialSend();
+        }
+
+        private void BtnBackwardLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = -255;
+            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = -170;
+            Wheel0AngleSlider.Value = -10;
+            Wheel1AngleSlider.Value = -15;
+            Wheel2AngleSlider.Value = 10;
+            Wheel3AngleSlider.Value = 15;
+            SerialSend();
+        }
+
+        private void BtnBackwardLeft_MouseUp(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            SerialSend();
+        }
+
+        private void BtnBackwardRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = -170;
+            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
+            Wheel0AngleSlider.Value = 15;
+            Wheel1AngleSlider.Value = 10;
+            Wheel2AngleSlider.Value = -15;
+            Wheel3AngleSlider.Value = -10;
+            SerialSend();
+        }
+
+        private void BtnBackwardRight_MouseUp(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            SerialSend();
+        }
+
+        private void BtnBackward_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
+            SerialSend();
+        }
+
+        private void BtnBackward_MouseUp(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            SerialSend();
+        }
+        #endregion
     }
 }
