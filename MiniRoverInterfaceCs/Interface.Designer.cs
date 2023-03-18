@@ -261,7 +261,7 @@
             // 
             // Wheel0AngleSlider
             // 
-            this.Wheel0AngleSlider.Location = new System.Drawing.Point(260, 450);
+            this.Wheel0AngleSlider.Location = new System.Drawing.Point(447, 450);
             this.Wheel0AngleSlider.Maximum = 90;
             this.Wheel0AngleSlider.Minimum = -90;
             this.Wheel0AngleSlider.Name = "Wheel0AngleSlider";
@@ -272,7 +272,7 @@
             // 
             // Wheel1AngleSlider
             // 
-            this.Wheel1AngleSlider.Location = new System.Drawing.Point(260, 501);
+            this.Wheel1AngleSlider.Location = new System.Drawing.Point(447, 501);
             this.Wheel1AngleSlider.Maximum = 90;
             this.Wheel1AngleSlider.Minimum = -90;
             this.Wheel1AngleSlider.Name = "Wheel1AngleSlider";
@@ -283,7 +283,7 @@
             // 
             // Wheel2AngleSlider
             // 
-            this.Wheel2AngleSlider.Location = new System.Drawing.Point(447, 450);
+            this.Wheel2AngleSlider.Location = new System.Drawing.Point(260, 450);
             this.Wheel2AngleSlider.Maximum = 90;
             this.Wheel2AngleSlider.Minimum = -90;
             this.Wheel2AngleSlider.Name = "Wheel2AngleSlider";
@@ -294,7 +294,7 @@
             // 
             // Wheel3AngleSlider
             // 
-            this.Wheel3AngleSlider.Location = new System.Drawing.Point(447, 501);
+            this.Wheel3AngleSlider.Location = new System.Drawing.Point(260, 501);
             this.Wheel3AngleSlider.Maximum = 90;
             this.Wheel3AngleSlider.Minimum = -90;
             this.Wheel3AngleSlider.Name = "Wheel3AngleSlider";
@@ -326,7 +326,7 @@
             // Wheel0AngleLabel
             // 
             this.Wheel0AngleLabel.AutoSize = true;
-            this.Wheel0AngleLabel.Location = new System.Drawing.Point(210, 465);
+            this.Wheel0AngleLabel.Location = new System.Drawing.Point(630, 465);
             this.Wheel0AngleLabel.Name = "Wheel0AngleLabel";
             this.Wheel0AngleLabel.Size = new System.Drawing.Size(47, 13);
             this.Wheel0AngleLabel.TabIndex = 25;
@@ -335,7 +335,7 @@
             // Wheel1AngleLabel
             // 
             this.Wheel1AngleLabel.AutoSize = true;
-            this.Wheel1AngleLabel.Location = new System.Drawing.Point(210, 515);
+            this.Wheel1AngleLabel.Location = new System.Drawing.Point(630, 515);
             this.Wheel1AngleLabel.Name = "Wheel1AngleLabel";
             this.Wheel1AngleLabel.Size = new System.Drawing.Size(47, 13);
             this.Wheel1AngleLabel.TabIndex = 26;
@@ -344,7 +344,7 @@
             // Wheel2AngleLabel
             // 
             this.Wheel2AngleLabel.AutoSize = true;
-            this.Wheel2AngleLabel.Location = new System.Drawing.Point(630, 465);
+            this.Wheel2AngleLabel.Location = new System.Drawing.Point(210, 465);
             this.Wheel2AngleLabel.Name = "Wheel2AngleLabel";
             this.Wheel2AngleLabel.Size = new System.Drawing.Size(47, 13);
             this.Wheel2AngleLabel.TabIndex = 27;
@@ -353,7 +353,7 @@
             // Wheel3AngleLabel
             // 
             this.Wheel3AngleLabel.AutoSize = true;
-            this.Wheel3AngleLabel.Location = new System.Drawing.Point(630, 515);
+            this.Wheel3AngleLabel.Location = new System.Drawing.Point(210, 515);
             this.Wheel3AngleLabel.Name = "Wheel3AngleLabel";
             this.Wheel3AngleLabel.Size = new System.Drawing.Size(47, 13);
             this.Wheel3AngleLabel.TabIndex = 28;
