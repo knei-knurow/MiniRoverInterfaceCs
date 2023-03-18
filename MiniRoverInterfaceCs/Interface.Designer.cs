@@ -69,6 +69,12 @@
             this.BtnArm3Right = new System.Windows.Forms.Button();
             this.BtnArm4Left = new System.Windows.Forms.Button();
             this.BtnArm4Right = new System.Windows.Forms.Button();
+            this.BtnForwardRight = new System.Windows.Forms.Button();
+            this.BtnForwardLeft = new System.Windows.Forms.Button();
+            this.BtnForward = new System.Windows.Forms.Button();
+            this.BtnBackward = new System.Windows.Forms.Button();
+            this.BtnBackwardLeft = new System.Windows.Forms.Button();
+            this.BtnBackwardRight = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).BeginInit();
@@ -235,7 +241,7 @@
             this.Wheel3SpeedLabel.AutoSize = true;
             this.Wheel3SpeedLabel.Location = new System.Drawing.Point(160, 45);
             this.Wheel3SpeedLabel.Name = "Wheel3SpeedLabel";
-            this.Wheel3SpeedLabel.Size = new System.Drawing.Size(1047, 13);
+            this.Wheel3SpeedLabel.Size = new System.Drawing.Size(47, 13);
             this.Wheel3SpeedLabel.TabIndex = 16;
             this.Wheel3SpeedLabel.Text = "Wheel 3";
             // 
@@ -469,12 +475,72 @@
             this.BtnArm4Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseDown);
             this.BtnArm4Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseUp);
             // 
+            // BtnForwardRight
+            // 
+            this.BtnForwardRight.Location = new System.Drawing.Point(880, 250);
+            this.BtnForwardRight.Name = "BtnForwardRight";
+            this.BtnForwardRight.Size = new System.Drawing.Size(75, 25);
+            this.BtnForwardRight.TabIndex = 39;
+            this.BtnForwardRight.Text = "For. right";
+            this.BtnForwardRight.UseVisualStyleBackColor = true;
+            // 
+            // BtnForwardLeft
+            // 
+            this.BtnForwardLeft.Location = new System.Drawing.Point(800, 250);
+            this.BtnForwardLeft.Name = "BtnForwardLeft";
+            this.BtnForwardLeft.Size = new System.Drawing.Size(75, 25);
+            this.BtnForwardLeft.TabIndex = 40;
+            this.BtnForwardLeft.Text = "For. left";
+            this.BtnForwardLeft.UseVisualStyleBackColor = true;
+            // 
+            // BtnForward
+            // 
+            this.BtnForward.Location = new System.Drawing.Point(840, 220);
+            this.BtnForward.Name = "BtnForward";
+            this.BtnForward.Size = new System.Drawing.Size(75, 25);
+            this.BtnForward.TabIndex = 41;
+            this.BtnForward.Text = "Forward";
+            this.BtnForward.UseVisualStyleBackColor = true;
+            // 
+            // BtnBackward
+            // 
+            this.BtnBackward.Location = new System.Drawing.Point(840, 310);
+            this.BtnBackward.Name = "BtnBackward";
+            this.BtnBackward.Size = new System.Drawing.Size(75, 25);
+            this.BtnBackward.TabIndex = 42;
+            this.BtnBackward.Text = "Backward";
+            this.BtnBackward.UseVisualStyleBackColor = true;
+            // 
+            // BtnBackwardLeft
+            // 
+            this.BtnBackwardLeft.Location = new System.Drawing.Point(800, 280);
+            this.BtnBackwardLeft.Name = "BtnBackwardLeft";
+            this.BtnBackwardLeft.Size = new System.Drawing.Size(75, 25);
+            this.BtnBackwardLeft.TabIndex = 43;
+            this.BtnBackwardLeft.Text = "Back. left";
+            this.BtnBackwardLeft.UseVisualStyleBackColor = true;
+            // 
+            // BtnBackwardRight
+            // 
+            this.BtnBackwardRight.Location = new System.Drawing.Point(880, 280);
+            this.BtnBackwardRight.Name = "BtnBackwardRight";
+            this.BtnBackwardRight.Size = new System.Drawing.Size(75, 25);
+            this.BtnBackwardRight.TabIndex = 44;
+            this.BtnBackwardRight.Text = "Back. right";
+            this.BtnBackwardRight.UseVisualStyleBackColor = true;
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 601);
+            this.Controls.Add(this.BtnBackwardRight);
+            this.Controls.Add(this.BtnBackwardLeft);
+            this.Controls.Add(this.BtnBackward);
+            this.Controls.Add(this.BtnForward);
+            this.Controls.Add(this.BtnForwardLeft);
+            this.Controls.Add(this.BtnForwardRight);
             this.Controls.Add(this.BtnArm4Right);
             this.Controls.Add(this.BtnArm4Left);
             this.Controls.Add(this.BtnArm3Right);
@@ -571,6 +637,12 @@
         public System.Windows.Forms.Button BtnArm3Right;
         public System.Windows.Forms.Button BtnArm4Left;
         public System.Windows.Forms.Button BtnArm4Right;
+        public System.Windows.Forms.Button BtnForwardRight;
+        public System.Windows.Forms.Button BtnForwardLeft;
+        public System.Windows.Forms.Button BtnForward;
+        public System.Windows.Forms.Button BtnBackward;
+        public System.Windows.Forms.Button BtnBackwardLeft;
+        public System.Windows.Forms.Button BtnBackwardRight;
     }
 }
 
