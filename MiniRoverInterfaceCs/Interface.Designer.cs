@@ -361,7 +361,7 @@
             // 
             // BtnArm0Left
             // 
-            this.BtnArm0Left.Location = new System.Drawing.Point(800, 200);
+            this.BtnArm0Left.Location = new System.Drawing.Point(800, 5);
             this.BtnArm0Left.Name = "BtnArm0Left";
             this.BtnArm0Left.Size = new System.Drawing.Size(75, 25);
             this.BtnArm0Left.TabIndex = 29;
@@ -372,7 +372,7 @@
             // 
             // BtnArm0Right
             // 
-            this.BtnArm0Right.Location = new System.Drawing.Point(880, 200);
+            this.BtnArm0Right.Location = new System.Drawing.Point(880, 5);
             this.BtnArm0Right.Name = "BtnArm0Right";
             this.BtnArm0Right.Size = new System.Drawing.Size(75, 25);
             this.BtnArm0Right.TabIndex = 30;
@@ -383,7 +383,7 @@
             // 
             // BtnArm1Left
             // 
-            this.BtnArm1Left.Location = new System.Drawing.Point(800, 230);
+            this.BtnArm1Left.Location = new System.Drawing.Point(800, 35);
             this.BtnArm1Left.Name = "BtnArm1Left";
             this.BtnArm1Left.Size = new System.Drawing.Size(75, 25);
             this.BtnArm1Left.TabIndex = 31;
@@ -394,7 +394,7 @@
             // 
             // BtnArm1Right
             // 
-            this.BtnArm1Right.Location = new System.Drawing.Point(880, 230);
+            this.BtnArm1Right.Location = new System.Drawing.Point(880, 35);
             this.BtnArm1Right.Name = "BtnArm1Right";
             this.BtnArm1Right.Size = new System.Drawing.Size(75, 25);
             this.BtnArm1Right.TabIndex = 32;
@@ -405,7 +405,7 @@
             // 
             // BtnArm2Left
             // 
-            this.BtnArm2Left.Location = new System.Drawing.Point(800, 260);
+            this.BtnArm2Left.Location = new System.Drawing.Point(800, 65);
             this.BtnArm2Left.Name = "BtnArm2Left";
             this.BtnArm2Left.Size = new System.Drawing.Size(75, 25);
             this.BtnArm2Left.TabIndex = 33;
@@ -416,7 +416,7 @@
             // 
             // BtnArm2Right
             // 
-            this.BtnArm2Right.Location = new System.Drawing.Point(880, 260);
+            this.BtnArm2Right.Location = new System.Drawing.Point(880, 65);
             this.BtnArm2Right.Name = "BtnArm2Right";
             this.BtnArm2Right.Size = new System.Drawing.Size(75, 25);
             this.BtnArm2Right.TabIndex = 34;
@@ -427,7 +427,7 @@
             // 
             // BtnArm3Left
             // 
-            this.BtnArm3Left.Location = new System.Drawing.Point(800, 290);
+            this.BtnArm3Left.Location = new System.Drawing.Point(800, 95);
             this.BtnArm3Left.Name = "BtnArm3Left";
             this.BtnArm3Left.Size = new System.Drawing.Size(75, 25);
             this.BtnArm3Left.TabIndex = 35;
@@ -438,7 +438,7 @@
             // 
             // BtnArm3Right
             // 
-            this.BtnArm3Right.Location = new System.Drawing.Point(880, 290);
+            this.BtnArm3Right.Location = new System.Drawing.Point(880, 95);
             this.BtnArm3Right.Name = "BtnArm3Right";
             this.BtnArm3Right.Size = new System.Drawing.Size(75, 25);
             this.BtnArm3Right.TabIndex = 36;
@@ -449,7 +449,7 @@
             // 
             // BtnArm4Left
             // 
-            this.BtnArm4Left.Location = new System.Drawing.Point(800, 320);
+            this.BtnArm4Left.Location = new System.Drawing.Point(800, 125);
             this.BtnArm4Left.Name = "BtnArm4Left";
             this.BtnArm4Left.Size = new System.Drawing.Size(75, 25);
             this.BtnArm4Left.TabIndex = 37;
@@ -460,7 +460,7 @@
             // 
             // BtnArm4Right
             // 
-            this.BtnArm4Right.Location = new System.Drawing.Point(880, 320);
+            this.BtnArm4Right.Location = new System.Drawing.Point(880, 125);
             this.BtnArm4Right.Name = "BtnArm4Right";
             this.BtnArm4Right.Size = new System.Drawing.Size(75, 25);
             this.BtnArm4Right.TabIndex = 38;
