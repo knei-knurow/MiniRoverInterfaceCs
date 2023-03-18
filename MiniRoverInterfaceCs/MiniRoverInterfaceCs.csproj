@@ -47,19 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InterfaceArmControls.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InterfaceWheelControls.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SerialRecieveSend.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Interface.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interface.Designer.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceArmControls.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceWheelControls.cs">
+      <DependentUpon>Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerialRecieveSend.cs">
       <DependentUpon>Interface.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
