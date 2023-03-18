@@ -55,12 +55,15 @@
     </Compile>
     <Compile Include="InterfaceArmControls.cs">
       <DependentUpon>Interface.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="InterfaceWheelControls.cs">
       <DependentUpon>Interface.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="SerialRecieveSend.cs">
       <DependentUpon>Interface.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
