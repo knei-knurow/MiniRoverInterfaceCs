@@ -201,6 +201,22 @@ namespace MiniRoverInterfaceCs
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
             SerialSend();
         }
+
+        private void BtnPivotLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = 255;
+            Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
+            Wheel0AngleSlider.Value = Wheel3AngleSlider.Value = -45;
+            Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = 45;
+        }
+
+        private void BtnPivotRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = -255;
+            Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 255;
+            Wheel0AngleSlider.Value = Wheel3AngleSlider.Value = -45;
+            Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = 45;
+        }
         #endregion
     }
 }

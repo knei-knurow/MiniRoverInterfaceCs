@@ -75,6 +75,8 @@
             this.BtnBackward = new System.Windows.Forms.Button();
             this.BtnBackwardLeft = new System.Windows.Forms.Button();
             this.BtnBackwardRight = new System.Windows.Forms.Button();
+            this.BtnPivotRight = new System.Windows.Forms.Button();
+            this.BtnPivotLeft = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).BeginInit();
@@ -510,7 +512,7 @@
             // 
             // BtnBackward
             // 
-            this.BtnBackward.Location = new System.Drawing.Point(840, 310);
+            this.BtnBackward.Location = new System.Drawing.Point(840, 340);
             this.BtnBackward.Name = "BtnBackward";
             this.BtnBackward.Size = new System.Drawing.Size(75, 25);
             this.BtnBackward.TabIndex = 42;
@@ -521,7 +523,7 @@
             // 
             // BtnBackwardLeft
             // 
-            this.BtnBackwardLeft.Location = new System.Drawing.Point(800, 280);
+            this.BtnBackwardLeft.Location = new System.Drawing.Point(800, 310);
             this.BtnBackwardLeft.Name = "BtnBackwardLeft";
             this.BtnBackwardLeft.Size = new System.Drawing.Size(75, 25);
             this.BtnBackwardLeft.TabIndex = 43;
@@ -532,7 +534,7 @@
             // 
             // BtnBackwardRight
             // 
-            this.BtnBackwardRight.Location = new System.Drawing.Point(880, 280);
+            this.BtnBackwardRight.Location = new System.Drawing.Point(880, 310);
             this.BtnBackwardRight.Name = "BtnBackwardRight";
             this.BtnBackwardRight.Size = new System.Drawing.Size(75, 25);
             this.BtnBackwardRight.TabIndex = 44;
@@ -541,12 +543,36 @@
             this.BtnBackwardRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnBackwardRight_MouseDown);
             this.BtnBackwardRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
+            // BtnPivotRight
+            // 
+            this.BtnPivotRight.Location = new System.Drawing.Point(880, 280);
+            this.BtnPivotRight.Name = "BtnPivotRight";
+            this.BtnPivotRight.Size = new System.Drawing.Size(75, 25);
+            this.BtnPivotRight.TabIndex = 45;
+            this.BtnPivotRight.Text = "Pivot right";
+            this.BtnPivotRight.UseVisualStyleBackColor = true;
+            this.BtnPivotRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnPivotRight_MouseDown);
+            this.BtnPivotRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
+            // 
+            // BtnPivotLeft
+            // 
+            this.BtnPivotLeft.Location = new System.Drawing.Point(800, 280);
+            this.BtnPivotLeft.Name = "BtnPivotLeft";
+            this.BtnPivotLeft.Size = new System.Drawing.Size(75, 25);
+            this.BtnPivotLeft.TabIndex = 46;
+            this.BtnPivotLeft.Text = "Pivot left";
+            this.BtnPivotLeft.UseVisualStyleBackColor = true;
+            this.BtnPivotLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnPivotLeft_MouseDown);
+            this.BtnPivotLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
+            // 
             // Interface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 601);
+            this.Controls.Add(this.BtnPivotLeft);
+            this.Controls.Add(this.BtnPivotRight);
             this.Controls.Add(this.BtnBackwardRight);
             this.Controls.Add(this.BtnBackwardLeft);
             this.Controls.Add(this.BtnBackward);
@@ -655,6 +681,8 @@
         public System.Windows.Forms.Button BtnBackward;
         public System.Windows.Forms.Button BtnBackwardLeft;
         public System.Windows.Forms.Button BtnBackwardRight;
+        public System.Windows.Forms.Button BtnPivotRight;
+        public System.Windows.Forms.Button BtnPivotLeft;
     }
 }
 
