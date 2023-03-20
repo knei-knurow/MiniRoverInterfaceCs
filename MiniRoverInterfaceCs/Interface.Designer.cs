@@ -484,7 +484,7 @@
             this.BtnForwardRight.Text = "For. right";
             this.BtnForwardRight.UseVisualStyleBackColor = true;
             this.BtnForwardRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnForwardRight_MouseDown);
-            this.BtnForwardRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnForwardRight_MouseUp);
+            this.BtnForwardRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
             // BtnForwardLeft
             // 
@@ -495,7 +495,7 @@
             this.BtnForwardLeft.Text = "For. left";
             this.BtnForwardLeft.UseVisualStyleBackColor = true;
             this.BtnForwardLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnForwardLeft_MouseDown);
-            this.BtnForwardLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnForwardLeft_MouseUp);
+            this.BtnForwardLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
             // BtnForward
             // 
@@ -506,7 +506,7 @@
             this.BtnForward.Text = "Forward";
             this.BtnForward.UseVisualStyleBackColor = true;
             this.BtnForward.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnForward_MouseDown);
-            this.BtnForward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnForward_MouseUp);
+            this.BtnForward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
             // BtnBackward
             // 
@@ -517,7 +517,7 @@
             this.BtnBackward.Text = "Backward";
             this.BtnBackward.UseVisualStyleBackColor = true;
             this.BtnBackward.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnBackward_MouseDown);
-            this.BtnBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnBackward_MouseUp);
+            this.BtnBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
             // BtnBackwardLeft
             // 
@@ -528,7 +528,7 @@
             this.BtnBackwardLeft.Text = "Back. left";
             this.BtnBackwardLeft.UseVisualStyleBackColor = true;
             this.BtnBackwardLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnBackwardLeft_MouseDown);
-            this.BtnBackwardLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnBackwardLeft_MouseUp);
+            this.BtnBackwardLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
             // BtnBackwardRight
             // 
@@ -539,7 +539,7 @@
             this.BtnBackwardRight.Text = "Back. right";
             this.BtnBackwardRight.UseVisualStyleBackColor = true;
             this.BtnBackwardRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnBackwardRight_MouseDown);
-            this.BtnBackwardRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnBackwardRight_MouseUp);
+            this.BtnBackwardRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
             // 
             // Interface
             // 

@@ -8,6 +8,13 @@ namespace MiniRoverInterfaceCs
 {
     public partial class Interface
     {
+        private void WheelFloor(object sender, MouseEventArgs e)
+        {
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
+            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
+            SerialSend();
+        }
+
         #region Wheel Speed
         bool WheelSpeedSliderSync = false;
         bool WheelAngleSliderSync = false;
@@ -145,12 +152,6 @@ namespace MiniRoverInterfaceCs
             SerialSend();
         }
 
-        private void BtnForward_MouseUp(object sender, MouseEventArgs e)
-        {
-            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
-            SerialSend();
-        }
-
         private void BtnForwardLeft_MouseDown(object sender, MouseEventArgs e)
         {
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = 255;
@@ -159,13 +160,6 @@ namespace MiniRoverInterfaceCs
             Wheel1AngleSlider.Value = 10;
             Wheel2AngleSlider.Value = -15;
             Wheel3AngleSlider.Value = 15;
-            SerialSend();
-        }
-
-        private void BtnForwardLeft_MouseUp(object sender, MouseEventArgs e)
-        {
-            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
-            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
             SerialSend();
         }
 
@@ -180,13 +174,6 @@ namespace MiniRoverInterfaceCs
             SerialSend();
         }
 
-        private void BtnForwardRight_MouseUp(object sender, MouseEventArgs e)
-        {
-            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
-            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
-            SerialSend();
-        }
-
         private void BtnBackwardLeft_MouseDown(object sender, MouseEventArgs e)
         {
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = -255;
@@ -195,13 +182,6 @@ namespace MiniRoverInterfaceCs
             Wheel1AngleSlider.Value = 10;
             Wheel2AngleSlider.Value = -15;
             Wheel3AngleSlider.Value = 15;
-            SerialSend();
-        }
-
-        private void BtnBackwardLeft_MouseUp(object sender, MouseEventArgs e)
-        {
-            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
-            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
             SerialSend();
         }
 
@@ -216,22 +196,9 @@ namespace MiniRoverInterfaceCs
             SerialSend();
         }
 
-        private void BtnBackwardRight_MouseUp(object sender, MouseEventArgs e)
-        {
-            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
-            Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
-            SerialSend();
-        }
-
         private void BtnBackward_MouseDown(object sender, MouseEventArgs e)
         {
             Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
-            SerialSend();
-        }
-
-        private void BtnBackward_MouseUp(object sender, MouseEventArgs e)
-        {
-            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 0;
             SerialSend();
         }
         #endregion
