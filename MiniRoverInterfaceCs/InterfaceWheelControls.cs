@@ -153,11 +153,11 @@ namespace MiniRoverInterfaceCs
 
         private void BtnForwardLeft_MouseDown(object sender, MouseEventArgs e)
         {
-            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = 255;
-            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = 170;
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = 255;
+            Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 170;
             Wheel0AngleSlider.Value = -10;
-            Wheel1AngleSlider.Value = -15;
-            Wheel2AngleSlider.Value = 10;
+            Wheel1AngleSlider.Value = 10;
+            Wheel2AngleSlider.Value = -15;
             Wheel3AngleSlider.Value = 15;
             SerialSend();
         }
@@ -171,11 +171,11 @@ namespace MiniRoverInterfaceCs
 
         private void BtnForwardRight_MouseDown(object sender, MouseEventArgs e)
         {
-            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = 170;
-            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = 255;
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = 170;
+            Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = 255;
             Wheel0AngleSlider.Value = 15;
-            Wheel1AngleSlider.Value = 10;
-            Wheel2AngleSlider.Value = -15;
+            Wheel1AngleSlider.Value = -15;
+            Wheel2AngleSlider.Value = 10;
             Wheel3AngleSlider.Value = -10;
             SerialSend();
         }
@@ -189,11 +189,11 @@ namespace MiniRoverInterfaceCs
 
         private void BtnBackwardLeft_MouseDown(object sender, MouseEventArgs e)
         {
-            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = -255;
-            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = -170;
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = -255;
+            Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = -170;
             Wheel0AngleSlider.Value = -10;
-            Wheel1AngleSlider.Value = -15;
-            Wheel2AngleSlider.Value = 10;
+            Wheel1AngleSlider.Value = 10;
+            Wheel2AngleSlider.Value = -15;
             Wheel3AngleSlider.Value = 15;
             SerialSend();
         }
@@ -207,11 +207,11 @@ namespace MiniRoverInterfaceCs
 
         private void BtnBackwardRight_MouseDown(object sender, MouseEventArgs e)
         {
-            Wheel0SpeedSlider.Value = Wheel2SpeedSlider.Value = -170;
-            Wheel1SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
+            Wheel0SpeedSlider.Value = Wheel1SpeedSlider.Value = -170;
+            Wheel2SpeedSlider.Value = Wheel3SpeedSlider.Value = -255;
             Wheel0AngleSlider.Value = 15;
-            Wheel1AngleSlider.Value = 10;
-            Wheel2AngleSlider.Value = -15;
+            Wheel1AngleSlider.Value = -15;
+            Wheel2AngleSlider.Value = 10;
             Wheel3AngleSlider.Value = -10;
             SerialSend();
         }
