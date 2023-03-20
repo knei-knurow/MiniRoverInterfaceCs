@@ -50,7 +50,7 @@ namespace MiniRoverInterfaceCs
             }
             else
             {
-                MessageBox.Show(@"Select different and not empty Send and Recieve Ports.");
+                MessageBox.Show(@"Select different and not empty Send and Recieve Ports");
             }
         }
 
@@ -64,8 +64,18 @@ namespace MiniRoverInterfaceCs
                 //SerialPortRecieve.PortName = TxtRecievePort.Text;
                 SerialPortSend.PortName = TxtSendPort.Text;
 
+                try
+                {
+                    SerialPortSend.Open();
+                }
+                catch (Exception ConnectException)
+                {
+                    MessageBox.Show($"Error while trying to connect: {ConnectException.Message}");
+                }
+
+
                 //SerialPortRecieve.Open();
-                SerialPortSend.Open();
+                
                 /*try
                 {
                     RecieveThread = new Thread(SerialPortRecieveRead);

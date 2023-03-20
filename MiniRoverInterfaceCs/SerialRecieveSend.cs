@@ -54,7 +54,7 @@ namespace MiniRoverInterfaceCs
             }
             catch (Exception SendException)
             {
-                MessageBox.Show(@"Ayo bruh: " + SendException.Message);
+                MessageBox.Show($"Error while sending data: {SendException.Message}");
             }
         }
     }
