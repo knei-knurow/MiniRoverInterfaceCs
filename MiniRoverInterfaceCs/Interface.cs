@@ -13,6 +13,7 @@ namespace MiniRoverInterfaceCs
         public Thread SendThread;
         public Interface()
         {
+            this.KeyPreview = true;
             InitializeComponent();
         }
 

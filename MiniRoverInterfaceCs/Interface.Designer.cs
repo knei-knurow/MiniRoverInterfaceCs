@@ -402,7 +402,7 @@
             this.BtnArm0Left.Name = "BtnArm0Left";
             this.BtnArm0Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm0Left.TabIndex = 29;
-            this.BtnArm0Left.Text = "Rotate left";
+            this.BtnArm0Left.Text = "Rotate left\r\nMotor 0";
             this.BtnArm0Left.UseVisualStyleBackColor = true;
             this.BtnArm0Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Left_MouseDown);
             this.BtnArm0Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Left_MouseUp);
@@ -414,7 +414,7 @@
             this.BtnArm0Right.Name = "BtnArm0Right";
             this.BtnArm0Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm0Right.TabIndex = 30;
-            this.BtnArm0Right.Text = "Rotate right";
+            this.BtnArm0Right.Text = "Rotate right\r\nMotor 0";
             this.BtnArm0Right.UseVisualStyleBackColor = true;
             this.BtnArm0Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Right_MouseDown);
             this.BtnArm0Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Right_MouseUp);
@@ -426,7 +426,7 @@
             this.BtnArm1Left.Name = "BtnArm1Left";
             this.BtnArm1Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm1Left.TabIndex = 31;
-            this.BtnArm1Left.Text = "Arm down";
+            this.BtnArm1Left.Text = "Arm down\r\nMotor 1";
             this.BtnArm1Left.UseVisualStyleBackColor = true;
             this.BtnArm1Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseDown);
             this.BtnArm1Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseUp);
@@ -438,7 +438,7 @@
             this.BtnArm1Right.Name = "BtnArm1Right";
             this.BtnArm1Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm1Right.TabIndex = 32;
-            this.BtnArm1Right.Text = "Arm up";
+            this.BtnArm1Right.Text = "Arm up\r\nMotor 1";
             this.BtnArm1Right.UseVisualStyleBackColor = true;
             this.BtnArm1Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Right_MouseDown);
             this.BtnArm1Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Right_MouseUp);
@@ -450,7 +450,7 @@
             this.BtnArm2Left.Name = "BtnArm2Left";
             this.BtnArm2Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm2Left.TabIndex = 33;
-            this.BtnArm2Left.Text = "Half arm down";
+            this.BtnArm2Left.Text = "Half arm down\r\nMotor 2";
             this.BtnArm2Left.UseVisualStyleBackColor = true;
             this.BtnArm2Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Left_MouseDown);
             this.BtnArm2Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Left_MouseUp);
@@ -462,7 +462,7 @@
             this.BtnArm2Right.Name = "BtnArm2Right";
             this.BtnArm2Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm2Right.TabIndex = 34;
-            this.BtnArm2Right.Text = "Half arm up";
+            this.BtnArm2Right.Text = "Half arm up\r\nMotor 2";
             this.BtnArm2Right.UseVisualStyleBackColor = true;
             this.BtnArm2Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Right_MouseDown);
             this.BtnArm2Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Right_MouseUp);
@@ -474,7 +474,7 @@
             this.BtnArm3Left.Name = "BtnArm3Left";
             this.BtnArm3Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm3Left.TabIndex = 35;
-            this.BtnArm3Left.Text = "Claw up";
+            this.BtnArm3Left.Text = "Claw up\r\nMotor 3";
             this.BtnArm3Left.UseVisualStyleBackColor = true;
             this.BtnArm3Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Left_MouseDown);
             this.BtnArm3Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Left_MouseUp);
@@ -486,7 +486,7 @@
             this.BtnArm3Right.Name = "BtnArm3Right";
             this.BtnArm3Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm3Right.TabIndex = 36;
-            this.BtnArm3Right.Text = "Claw down";
+            this.BtnArm3Right.Text = "Claw down\r\nMotor 3";
             this.BtnArm3Right.UseVisualStyleBackColor = true;
             this.BtnArm3Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Right_MouseDown);
             this.BtnArm3Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Right_MouseUp);
@@ -498,7 +498,7 @@
             this.BtnArm4Left.Name = "BtnArm4Left";
             this.BtnArm4Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm4Left.TabIndex = 37;
-            this.BtnArm4Left.Text = "Claw close";
+            this.BtnArm4Left.Text = "Claw close\r\nMotor 4";
             this.BtnArm4Left.UseVisualStyleBackColor = true;
             this.BtnArm4Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Left_MouseDown);
             this.BtnArm4Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Left_MouseUp);
@@ -510,7 +510,7 @@
             this.BtnArm4Right.Name = "BtnArm4Right";
             this.BtnArm4Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm4Right.TabIndex = 38;
-            this.BtnArm4Right.Text = "Claw open";
+            this.BtnArm4Right.Text = "Claw open\r\nMotor 4";
             this.BtnArm4Right.UseVisualStyleBackColor = true;
             this.BtnArm4Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseDown);
             this.BtnArm4Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseUp);
@@ -522,7 +522,7 @@
             this.BtnForwardRight.Name = "BtnForwardRight";
             this.BtnForwardRight.Size = new System.Drawing.Size(112, 38);
             this.BtnForwardRight.TabIndex = 39;
-            this.BtnForwardRight.Text = "For. right";
+            this.BtnForwardRight.Text = "For. right (d)";
             this.BtnForwardRight.UseVisualStyleBackColor = true;
             this.BtnForwardRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnForwardRight_MouseDown);
             this.BtnForwardRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
@@ -534,7 +534,7 @@
             this.BtnForwardLeft.Name = "BtnForwardLeft";
             this.BtnForwardLeft.Size = new System.Drawing.Size(112, 38);
             this.BtnForwardLeft.TabIndex = 40;
-            this.BtnForwardLeft.Text = "For. left";
+            this.BtnForwardLeft.Text = "For. left (a)";
             this.BtnForwardLeft.UseVisualStyleBackColor = true;
             this.BtnForwardLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnForwardLeft_MouseDown);
             this.BtnForwardLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
@@ -546,7 +546,7 @@
             this.BtnForward.Name = "BtnForward";
             this.BtnForward.Size = new System.Drawing.Size(112, 38);
             this.BtnForward.TabIndex = 41;
-            this.BtnForward.Text = "Forward";
+            this.BtnForward.Text = "Forward (w)";
             this.BtnForward.UseVisualStyleBackColor = true;
             this.BtnForward.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnForward_MouseDown);
             this.BtnForward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
@@ -558,7 +558,7 @@
             this.BtnBackward.Name = "BtnBackward";
             this.BtnBackward.Size = new System.Drawing.Size(112, 38);
             this.BtnBackward.TabIndex = 42;
-            this.BtnBackward.Text = "Backward";
+            this.BtnBackward.Text = "Backward (s)";
             this.BtnBackward.UseVisualStyleBackColor = true;
             this.BtnBackward.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnBackward_MouseDown);
             this.BtnBackward.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
@@ -594,7 +594,7 @@
             this.BtnPivotRight.Name = "BtnPivotRight";
             this.BtnPivotRight.Size = new System.Drawing.Size(112, 38);
             this.BtnPivotRight.TabIndex = 45;
-            this.BtnPivotRight.Text = "Pivot right";
+            this.BtnPivotRight.Text = "Pivot right (e)";
             this.BtnPivotRight.UseVisualStyleBackColor = true;
             this.BtnPivotRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnPivotRight_MouseDown);
             this.BtnPivotRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
@@ -606,7 +606,7 @@
             this.BtnPivotLeft.Name = "BtnPivotLeft";
             this.BtnPivotLeft.Size = new System.Drawing.Size(112, 38);
             this.BtnPivotLeft.TabIndex = 46;
-            this.BtnPivotLeft.Text = "Pivot left";
+            this.BtnPivotLeft.Text = "Pivot left (q)";
             this.BtnPivotLeft.UseVisualStyleBackColor = true;
             this.BtnPivotLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnPivotLeft_MouseDown);
             this.BtnPivotLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.WheelFloor);
@@ -667,6 +667,8 @@
             this.Name = "Interface";
             this.Text = "Interface";
             this.Load += new System.EventHandler(this.Interface_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Interface_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Interface_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.Wheel0SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel1SpeedSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Wheel2SpeedSlider)).EndInit();
