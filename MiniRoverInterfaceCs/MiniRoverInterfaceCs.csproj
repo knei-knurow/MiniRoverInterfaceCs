@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KeyInputHandler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyInputHandler.Designer.cs">
+      <DependentUpon>KeyInputHandler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface.cs">
       <SubType>Form</SubType>
     </Compile>

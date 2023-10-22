@@ -134,10 +134,5 @@ namespace MiniRoverInterfaceCs
                 TxtRecievePort.Items.Add(comport);
             }
         }
-
-        private void BtnArm1Left_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

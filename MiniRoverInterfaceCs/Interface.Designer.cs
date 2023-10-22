@@ -428,7 +428,6 @@
             this.BtnArm1Left.TabIndex = 31;
             this.BtnArm1Left.Text = "Arm down";
             this.BtnArm1Left.UseVisualStyleBackColor = true;
-            this.BtnArm1Left.Click += new System.EventHandler(this.BtnArm1Left_Click);
             this.BtnArm1Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseDown);
             this.BtnArm1Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseUp);
             // 
