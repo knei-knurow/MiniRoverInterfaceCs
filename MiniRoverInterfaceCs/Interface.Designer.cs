@@ -397,120 +397,121 @@
             // 
             // BtnArm0Left
             // 
-            this.BtnArm0Left.Location = new System.Drawing.Point(1190, 8);
+            this.BtnArm0Left.Location = new System.Drawing.Point(1470, 5);
             this.BtnArm0Left.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm0Left.Name = "BtnArm0Left";
-            this.BtnArm0Left.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm0Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm0Left.TabIndex = 29;
-            this.BtnArm0Left.Text = "Arm 0 left";
+            this.BtnArm0Left.Text = "Rotate left";
             this.BtnArm0Left.UseVisualStyleBackColor = true;
             this.BtnArm0Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Left_MouseDown);
             this.BtnArm0Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Left_MouseUp);
             // 
             // BtnArm0Right
             // 
-            this.BtnArm0Right.Location = new System.Drawing.Point(1330, 8);
+            this.BtnArm0Right.Location = new System.Drawing.Point(1685, 5);
             this.BtnArm0Right.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm0Right.Name = "BtnArm0Right";
-            this.BtnArm0Right.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm0Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm0Right.TabIndex = 30;
-            this.BtnArm0Right.Text = "Arm 0 right";
+            this.BtnArm0Right.Text = "Rotate right";
             this.BtnArm0Right.UseVisualStyleBackColor = true;
             this.BtnArm0Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Right_MouseDown);
             this.BtnArm0Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm0Right_MouseUp);
             // 
             // BtnArm1Left
             // 
-            this.BtnArm1Left.Location = new System.Drawing.Point(1190, 69);
+            this.BtnArm1Left.Location = new System.Drawing.Point(1470, 115);
             this.BtnArm1Left.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm1Left.Name = "BtnArm1Left";
-            this.BtnArm1Left.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm1Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm1Left.TabIndex = 31;
-            this.BtnArm1Left.Text = "Arm 1 left";
+            this.BtnArm1Left.Text = "Arm down";
             this.BtnArm1Left.UseVisualStyleBackColor = true;
+            this.BtnArm1Left.Click += new System.EventHandler(this.BtnArm1Left_Click);
             this.BtnArm1Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseDown);
             this.BtnArm1Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Left_MouseUp);
             // 
             // BtnArm1Right
             // 
-            this.BtnArm1Right.Location = new System.Drawing.Point(1330, 69);
+            this.BtnArm1Right.Location = new System.Drawing.Point(1685, 115);
             this.BtnArm1Right.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm1Right.Name = "BtnArm1Right";
-            this.BtnArm1Right.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm1Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm1Right.TabIndex = 32;
-            this.BtnArm1Right.Text = "Arm 1 right";
+            this.BtnArm1Right.Text = "Arm up";
             this.BtnArm1Right.UseVisualStyleBackColor = true;
             this.BtnArm1Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Right_MouseDown);
             this.BtnArm1Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm1Right_MouseUp);
             // 
             // BtnArm2Left
             // 
-            this.BtnArm2Left.Location = new System.Drawing.Point(1190, 130);
+            this.BtnArm2Left.Location = new System.Drawing.Point(1470, 225);
             this.BtnArm2Left.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm2Left.Name = "BtnArm2Left";
-            this.BtnArm2Left.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm2Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm2Left.TabIndex = 33;
-            this.BtnArm2Left.Text = "Arm 2 left";
+            this.BtnArm2Left.Text = "Half arm down";
             this.BtnArm2Left.UseVisualStyleBackColor = true;
             this.BtnArm2Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Left_MouseDown);
             this.BtnArm2Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Left_MouseUp);
             // 
             // BtnArm2Right
             // 
-            this.BtnArm2Right.Location = new System.Drawing.Point(1330, 130);
+            this.BtnArm2Right.Location = new System.Drawing.Point(1685, 225);
             this.BtnArm2Right.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm2Right.Name = "BtnArm2Right";
-            this.BtnArm2Right.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm2Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm2Right.TabIndex = 34;
-            this.BtnArm2Right.Text = "Arm 2 right";
+            this.BtnArm2Right.Text = "Half arm up";
             this.BtnArm2Right.UseVisualStyleBackColor = true;
             this.BtnArm2Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Right_MouseDown);
             this.BtnArm2Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm2Right_MouseUp);
             // 
             // BtnArm3Left
             // 
-            this.BtnArm3Left.Location = new System.Drawing.Point(1190, 191);
+            this.BtnArm3Left.Location = new System.Drawing.Point(1685, 335);
             this.BtnArm3Left.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm3Left.Name = "BtnArm3Left";
-            this.BtnArm3Left.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm3Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm3Left.TabIndex = 35;
-            this.BtnArm3Left.Text = "Arm 3 left";
+            this.BtnArm3Left.Text = "Claw up";
             this.BtnArm3Left.UseVisualStyleBackColor = true;
             this.BtnArm3Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Left_MouseDown);
             this.BtnArm3Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Left_MouseUp);
             // 
             // BtnArm3Right
             // 
-            this.BtnArm3Right.Location = new System.Drawing.Point(1330, 191);
+            this.BtnArm3Right.Location = new System.Drawing.Point(1470, 335);
             this.BtnArm3Right.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm3Right.Name = "BtnArm3Right";
-            this.BtnArm3Right.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm3Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm3Right.TabIndex = 36;
-            this.BtnArm3Right.Text = "Arm 3 right";
+            this.BtnArm3Right.Text = "Claw down";
             this.BtnArm3Right.UseVisualStyleBackColor = true;
             this.BtnArm3Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Right_MouseDown);
             this.BtnArm3Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm3Right_MouseUp);
             // 
             // BtnArm4Left
             // 
-            this.BtnArm4Left.Location = new System.Drawing.Point(1190, 252);
+            this.BtnArm4Left.Location = new System.Drawing.Point(1470, 448);
             this.BtnArm4Left.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm4Left.Name = "BtnArm4Left";
-            this.BtnArm4Left.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm4Left.Size = new System.Drawing.Size(200, 100);
             this.BtnArm4Left.TabIndex = 37;
-            this.BtnArm4Left.Text = "Arm 4 left";
+            this.BtnArm4Left.Text = "Claw close";
             this.BtnArm4Left.UseVisualStyleBackColor = true;
             this.BtnArm4Left.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Left_MouseDown);
             this.BtnArm4Left.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Left_MouseUp);
             // 
             // BtnArm4Right
             // 
-            this.BtnArm4Right.Location = new System.Drawing.Point(1330, 252);
+            this.BtnArm4Right.Location = new System.Drawing.Point(1685, 448);
             this.BtnArm4Right.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnArm4Right.Name = "BtnArm4Right";
-            this.BtnArm4Right.Size = new System.Drawing.Size(122, 48);
+            this.BtnArm4Right.Size = new System.Drawing.Size(200, 100);
             this.BtnArm4Right.TabIndex = 38;
-            this.BtnArm4Right.Text = "Arm 4 right";
+            this.BtnArm4Right.Text = "Claw open";
             this.BtnArm4Right.UseVisualStyleBackColor = true;
             this.BtnArm4Right.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseDown);
             this.BtnArm4Right.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnArm4Right_MouseUp);
@@ -616,7 +617,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1476, 925);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.BtnPivotLeft);
             this.Controls.Add(this.BtnPivotRight);
             this.Controls.Add(this.BtnBackwardRight);
