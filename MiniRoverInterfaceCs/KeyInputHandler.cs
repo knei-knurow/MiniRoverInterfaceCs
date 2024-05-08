@@ -18,6 +18,7 @@ namespace MiniRoverInterfaceCs
             Wheel0AngleSlider.Value = Wheel1AngleSlider.Value = Wheel2AngleSlider.Value = Wheel3AngleSlider.Value = 0;
             ArmRun[0] ^= ArmRun[0];
             ArmRun[1] ^= ArmRun[1];
+
             SerialSend();
         }
 
